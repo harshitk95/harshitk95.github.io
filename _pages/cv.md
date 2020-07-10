@@ -16,15 +16,11 @@ Education
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* January - March 2020: Research Assistant
+  * Computational Robotics Laboratory, ETH Zurich
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* June - December 2018: Research Intern
+  * Disney Research Zurich
   
 Skills
 ======
