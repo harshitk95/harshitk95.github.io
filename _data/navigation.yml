@@ -17,6 +17,12 @@ main:
     
   - title: "CV"
     url: /cv/
+
+  - title: "Dancing"
+    url: /dancing/
+
+  - title: "Music"
+    url: /music/
     
-  - title: "Guide"
-    url: /markdown/
+  - title: "Sports"
+    url: /sports/
