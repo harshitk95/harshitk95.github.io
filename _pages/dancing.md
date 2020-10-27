@@ -11,18 +11,25 @@ I tend to learn dancing in a technical manner and that relates to my education i
 
 Argentine Tango
 ======
+
 Lindy Hop
 ======
+
 Rock and Roll
 ======
+
 Salsa Cubana
 ======
+
 Bachata
 ======
+
 Standard and Latin
 ======
+
 Tap Dance
 ======
+
 Forro
 ======
 
