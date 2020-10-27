@@ -11,16 +11,21 @@ redirect_from:
 
 Education
 ======
-* B.Tech. in Mechanical Engineering, Indian Institute of Technology Delhi, 2016
+* PhD in Electical Engineering, EPF Lausanne, (Aug 2020 - present)
 * M.Sc. in Robotics, Systems and Controls, ETH Zurich, 2019
+* B.Tech. in Mechanical Engineering, Indian Institute of Technology Delhi, 2016
+
 
 Work experience
 ======
-* January - March 2020: Research Assistant
+* January 2020 - March 2020: Research Assistant
   * Computational Robotics Laboratory, ETH Zurich
 
-* June - December 2018: Research Intern
+* June 2018 - December 2018: Research Intern
   * Disney Research Zurich
+  
+* Sept 2017 - Feb 2018: Engineering Intern
+  * Perspective Robotics AG, Zurich
   
 Skills
 ======
