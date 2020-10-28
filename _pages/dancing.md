@@ -12,6 +12,8 @@ I tend to learn dancing in a technical manner and that relates to my education i
 Argentine Tango
 ======
 
+Remains my favourite pair dance of all times is the form of dancing called the Argentine Tango.
+
 Lindy Hop
 ======
 
