@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I am a first year Doctoral Assistant in Machine Learning and Robotics at [Learning Algorithms and Systems Laboratory (LASA)](http://lasa.epfl.ch/) at [EPFL](https://www.epfl.ch/en/). Prior to that, I finished my masters in Robotics, Systems and Controls at [ETH Zurich](https://ethz.ch/en.html) in 2019. I had the opportunity to complete internships at [Disney Research Studios](https://studios.disneyresearch.com/), formerly Disney Research Zurich and [Fotokite](https://fotokite.com/).
+I am a first year Doctoral Assistant in Machine Learning and Robotics at [Learning Algorithms and Systems Laboratory (LASA)](http://lasa.epfl.ch/) at [EPFL](https://www.epfl.ch/en/). Prior to that, I finished my masters in Robotics, Systems and Controls at [ETH Zurich](https://ethz.ch/en.html) in 2019. I had the opportunity to complete internships at [Disney Research Studios](https://studios.disneyresearch.com/), formerly Disney Research Zurich and [Fotokite](https://fotokite.com/). I completed my bachelors degree in Mechanical Engineering from [IIT Delhi](https://home.iitd.ac.in/) in 2016.
