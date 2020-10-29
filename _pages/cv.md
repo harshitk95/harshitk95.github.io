@@ -18,14 +18,14 @@ Education
 
 Work experience
 ======
-* January 2020 - March 2020: Research Assistant
-  * Computational Robotics Laboratory, ETH Zurich
+* Computational Robotics Laboratory, ETH Zurich: Research Assistant
+  * 
 
-* June 2018 - December 2018: Research Intern
-  * Disney Research Zurich
+* Disney Research Zurich: Research Intern
+  * 
   
-* Sept 2017 - Feb 2018: Engineering Intern
-  * Perspective Robotics AG, Zurich
+* Fotokite: Engineering Intern
+  * 
 
 Publications
 ======
