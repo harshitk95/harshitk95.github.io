@@ -14,9 +14,7 @@ Education
 * PhD in Electical Engineering, [**EPF Lausanne**](https://www.epfl.ch/en/), (Aug 2020 - present)
 * M.Sc. in Robotics, Systems and Controls, [**ETH Zurich**](https://www.ethz.ch/en/), 2019
   * Master's Thesis: Model Predictive Control for morphing quadrotor.
-    * Title: Model Predictive Control for morphing quadrotor
   * Semester Thesis: Human Interaction with a Path Following Quadrotor.
-    * Title: Human Interaction with path following quadrotor
   * Course Work:
     * Dynamic Programming and Optimal Control, System Identification, Probabilistic Artificial Intelligence, Game Theory and Control, Robot Dynamics, Linear System Theory, Recursive Estimation, Learning and Intelligent Systems, Image Analysis and Computer Vision
 * B.Tech. in Mechanical Engineering, [**IIT Delhi**](https://home.iitd.ac.in/), 2016
