@@ -14,9 +14,9 @@ Education
 * PhD in Electical Engineering, [**EPF Lausanne**](https://www.epfl.ch/en/), (Aug 2020 - present)
 * M.Sc. in Robotics, Systems and Controls, [**ETH Zurich**](https://www.ethz.ch/en/), 2019
   * Master's Thesis: Model Predictive Control for morphing quadrotor.
-    * 
+    * Title: Model Predictive Control for morphing quadrotor
   * Semester Thesis: Human Interaction with a Path Following Quadrotor.
-    * 
+    * Title: Human Interaction with path following quadrotor
   * Course Work:
     * Dynamic Programming and Optimal Control, System Identification, Probabilistic Artificial Intelligence, Game Theory and Control, Robot Dynamics, Linear System Theory, Recursive Estimation, Learning and Intelligent Systems, Image Analysis and Computer Vision
 * B.Tech. in Mechanical Engineering, [**IIT Delhi**](https://home.iitd.ac.in/), 2016
@@ -24,16 +24,11 @@ Education
 
 Work experience
 ======
-* Computational Robotics Laboratory, ETH Zurich: Research Assistant
-  * 
-
-* Disney Research Zurich: Research Intern
-  * 
-  
-* Fotokite: Engineering Intern
-  * 
-
+* Computational Robotics Laboratory, ETH Zurich: Research Assistant (Jan 2020 - March, 2020)
+* Disney Research Zurich: Research Intern (June 2018 - December, 2018)
+* Fotokite: Engineering Intern (September 2017 - February, 2018)
 * ETH Zurich: Teaching Assistant
+* IIT Delhi: Teaching Assistant
 
 Publications
 ======
