@@ -12,3 +12,4 @@ paperurl: 'https://www.researchgate.net/publication/333735594_A_Virtual_Reality_
 [Download paper here](https://www.researchgate.net/publication/333735594_A_Virtual_Reality_Interface_for_an_Autonomous_Spray_Painting_UAV)
 
 Vempati, Anurag Sai & Khurana, Harshit & Kabelka, Vojtech & Flückiger, Simon & Siegwart, Roland & Beardsley, Paul. (2019). A Virtual Reality Interface for an Autonomous Spray Painting UAV. IEEE Robotics and Automation Letters. PP. 1-1. 10.1109/LRA.2019.2922588.
+
