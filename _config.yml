@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Harshit Khurana"
 title_separator          : "-"
 name                     : &name "Harshit Khurana"
-description              : &description "Prospective Doctoral Student at EPF Lausanne"
+description              : &description "Doctoral Assistant at EPF Lausanne"
 url                      : https://harshitk95.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "harshitk95/harshitk95.github.io"
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Harshit Khurana"
   avatar           : "Harshit.png"
-  bio              : "Engineer"
-  location         : "Zurich, Switzerland"
+  bio              : "Doctoral Assistant"
+  location         : "Lausanne, Switzerland"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=uh1UsUcAAAAJ"
   email            :
   researchgate     :  
   uri              :
