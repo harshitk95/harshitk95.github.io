@@ -82,7 +82,11 @@ analytics:
 author:
   name             : "Harshit Khurana"
   avatar           : "Harshit.png"
+<<<<<<< HEAD
   bio              : "Doctoral Assistant"
+=======
+  bio              : "Doctoral Candidate"
+>>>>>>> 47b399157ca64f80058d345c2c4ee5c4c1809c55
   location         : "Lausanne, Switzerland"
   employer         :
   pubmed           : 
