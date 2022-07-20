@@ -17,6 +17,6 @@ My main instrument is [bansuri](https://en.wikipedia.org/wiki/Bansuri). It is an
 
 ### Sports
 
-I play mostly table tennis, badminton and Ultimate Frisbee. I have a general affinity to flying objects and the physics of swing effects fascinates me.
+I currently play Ultimate Frisbee with [FlyHigh Lausanne](https://www.flyhigh.ultimate.ch/) and enjoy table tennis and badminton. I have a general affinity to flying objects and the physics of swing effects fascinates me. 
 
 
