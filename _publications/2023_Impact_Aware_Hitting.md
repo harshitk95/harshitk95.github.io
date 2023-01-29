@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Motion Planning and Inertia Based Control for Impact Aware Manipulation"
 collection: publications
 permalink: /publication/impact_aware_hitting
 excerpt: 'In this paper, we propose a method for motion generation and controls for a 
