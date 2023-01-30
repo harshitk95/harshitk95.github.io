@@ -24,7 +24,7 @@ Work experience
 ======
 * Computational Robotics Laboratory, ETH Zurich: Research Assistant (Jan 2020 - March, 2020)
 * Disney Research Zurich: Research Intern (June 2018 - December, 2018)
-* Fotokite: Engineering Intern (September 2017 - February, 2018)
+* Perspective Robotics (Fotokite): Engineering Intern (September 2017 - February, 2018)
 * ETH Zurich: Teaching Assistant
 * IIT Delhi: Teaching Assistant
 
@@ -34,11 +34,11 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-<!-- Talks
+Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul> -->
+  {% endfor %}</ul>
   
 Teaching
 ======
