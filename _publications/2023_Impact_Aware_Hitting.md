@@ -1,7 +1,7 @@
 ---
 title: "Motion Planning and Inertia Based Control for Impact Aware Manipulation"
 collection: publications
-permalink: /publication/impact_aware_hitting
+permalink: /publications/impact_aware_hitting
 excerpt: 'In this paper, we propose a method for motion generation and controls for a 
 robot manipulator to interact with the environment through a striking or hitting motion. Given the task 
 of placing a known object outside of the workspace of the robot, the robot 

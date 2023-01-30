@@ -1,7 +1,7 @@
 ---
 title: "Learning to Hit: A statistical Dynamical System based approach"
 collection: publications
-permalink: /publication/learning_to_hit
+permalink: /publications/learning_to_hit
 excerpt: 'This paper proposes a manipulation scheme based
 on learning the motion of objects after being hit by a robotic
 end-effector. This allows for the object to be positioned at a
