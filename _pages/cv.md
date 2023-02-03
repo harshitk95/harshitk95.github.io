@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* PhD in Electical Engineering, [**EPF Lausanne**](https://www.epfl.ch/en/), (Aug 2020 - present)
+* PhD in Electrical Engineering (Robotics), [**EPF Lausanne**](https://www.epfl.ch/en/), (Aug 2020 - present)
 * M.Sc. in Robotics, Systems and Controls, [**ETH Zurich**](https://www.ethz.ch/en/), 2019
   * Master's Thesis: Model Predictive Control for morphing quadrotor.
   * Semester Thesis: Human Interaction with a Path Following Quadrotor.
