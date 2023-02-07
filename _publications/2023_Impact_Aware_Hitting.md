@@ -17,7 +17,7 @@ while following a motion plan constrained to the robot limits is presented.
 The system is tested for  different scenarios in simulation showing the repeatability of the 
 procedure and in real scenarios with KUKA LBR iiwa 7 robot.'
 date: 2022-12-25
-venue: 'Under review'
+venue: 'IEEE Transactions on Robotics - Under review'
 # paperurl: 'https://www.researchgate.net/publication/333735594_A_Virtual_Reality_Interface_for_an_Autonomous_Spray_Painting_UAV'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
