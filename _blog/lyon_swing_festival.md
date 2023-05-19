@@ -1,7 +1,7 @@
 ---
 title: "Lyon Swing Festival 2022"
-collection: posts
+collection: blog
 date: 2022-11-10
-permalink: /posts/lyonswingfestival
+permalink: /blog/lyonswingfestival
 
 ---
