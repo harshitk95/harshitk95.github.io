@@ -7,4 +7,3 @@ tags:
   - lindy hop
   - solo jazz
 ---
-lyon
