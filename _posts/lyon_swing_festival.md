@@ -1,7 +1,7 @@
 ---
 title: "Lyon Swing Festival 2022"
-collection: teaching
+collection: posts
 date: 2022-11-10
-permalink: /teaching/lyonswingfestival
+permalink: /posts/lyonswingfestival
 
 ---
