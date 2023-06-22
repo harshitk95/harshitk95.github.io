@@ -17,7 +17,7 @@ hitting using real robot. The approach is tested on real robot
 with a KUKA LBR IIWA robot.
 '
 date: 2021-09-27
-venue: 'IROS 2021'
+venue: 'IROS'
 paperurl: 'https://infoscience.epfl.ch/record/287784?&ln=en'
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
