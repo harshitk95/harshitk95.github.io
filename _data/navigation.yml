@@ -11,9 +11,6 @@ main:
 
   - title: "Hobbies"
     url: /hobbies/
-
-  # - title: "Music"
-  #   url: /music/
     
   - title: "Projects"
     url: /projects/
