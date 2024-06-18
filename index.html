@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Durgesh Salunkhe</title>
+    <link rel="stylesheet" href="style.css?rnd=18">
+    <script type="text/javascript" src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+</head>
+
+<body>
+    <div class="logo">
+        <a href="personal/personal.html"><img src="images/logo_indark.png" alt="logo" width="30px"></a>
+        <p>work</p>
+    </div>
+
+    <div class="navcontent">
+        <!--<a href="index.html">theme</a>-->
+        <a href="experience.html"><span class="navlogo"><img src="images/experience_green.png" width="20px" height="20px"></span> <span class="navnum">01.</span> <span class="navtitle">experience</span></a>
+        <a href="projects.html"><span class="navlogo"><img src="images/projects_green.png" width="20px" height="20px"></span><span class="navnum">02.</span> <span class="navtitle">projects</span></a>
+        <a href="publications.html"><span class="navlogo"><img src="images/publications_green.png" width="20px" height="20px"></span><span class="navnum">03.</span> <span class="navtitle">publications</span></a>
+        <a href="#footId" onclick="blink()"><span class="navlogo"><img src="images/contact_green.png" width="20px" height="20px"></span><span class="navnum">04.</span> <span class="navtitle">contact</span></a>
+    </div>
+
+    <div class="topBack"></div>
+
+    <div class="hero">
+
+         <div class="imageblock" id="logoBlock">
+                <a href="https://fr.linkedin.com/in/salunkhedurgesh"><img src="images/linkedIn_indark.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/durgesh_salunkhe/"><img src="images/instagram_indark.png" alt="instagram"></a>
+                <a href="https://github.com/salunkhedurgesh"><img src="images/github_indark.png" alt="github"></a>
+        </div>
+
+        <div class="middleblock">
+            <p class="hello">Hello, I am</p>
+            <div class="nameblock" id="name">
+                    <h1>D</h1><h1>u</h1><h1>r</h1><h1>g</h1><h1>e</h1><h1>s</h1><h1>h</h1><h1>&nbsp</h1>
+                    <h1>S</h1><h1>a</h1><h1>l</h1><h1>u</h1><h1>n</h1><h1>k</h1><h1>h</h1><h1>e</h1>
+            </div>
+            <!--
+            <div class="nameblock">
+                <div class="subnameblock" id="name">
+                    <h1>D</h1><h1>u</h1><h1>r</h1><h1>g</h1><h1>e</h1><h1>s</h1><h1>h</h1><h1>&nbsp</h1>
+                    <h1>S</h1><h1>a</h1><h1>l</h1><h1>u</h1><h1>n</h1><h1>k</h1><h1>h</h1><h1>e</h1>
+                </div>
+            </div>
+            -->
+            <h2>I am a researcher at
+                <a href="https://www.epfl.ch/labs/lasa/" target="_blank" class="ls2n">LASA lab</a>,
+                <a href="https://www.epfl.ch/" target="_blank" class="ls2n">EPFL</a>
+            </h2>
+
+            <div id="small_name">
+                    Durgesh Salunkhe
+            </div>
+
+            <div class="profile">
+                <img src="images/profile_pic.jpeg" alt="profile pic" id="#grayscale">
+                <div class="profileDetails">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a postdoctoral researcher at <a href="https://www.epfl.ch/labs/lasa/" target="_blank" class="ls2n">LASA</a> lab, <a href="https://www.epfl.ch/en/" target="_blank" class="ls2n">EPFL</a>. I completed my PhD at
+                        <a href="https://www.ls2n.fr/" target="_blank" class="ls2n">LS2N</a>
+                        lab on “Cuspidal Robots: theoretical study, classification and
+                        applications to commercial robots” under the guidance of Prof. Philippe Wenger and
+                        Prof. Damien Chablat.  I completed my double Master’s degree in the Erasmus Mundus course,
+                        European Master on Advanced Robotics plus (EMARO+). <br><br>
+                        My <a href="https://www.researchgate.net/publication/344289581_Optimal_kinematic_design_of_parallel_mechanism_for_otological_surgery"
+                              onclick="open_tab('https://www.youtube.com/watch?v=nLlRhAMM0Nc&t=731s')" target="_blank" class="ls2n">master thesis</a>
+                        was on optimal kinematic design
+                        of a parallel mechanism for otological surgery in collaboration with the Nantes Hospital.
+                        While working as Junior Research Fellow at Indian Institute of Technology (IIT), Jodhpur,
+                        I worked in Sensorless compliance in 6-dof parallel mechanisms and multi-agent load
+                        manipulation. During my initial corporate career, I worked as a mechanical design
+                        engineer at Grey Orange Pvt Ltd, a leading warehouse automation company in India. <br><br>
+                        Buzzwords that interest me:
+                        <span class="hovHigh" onclick="click_buzzword('algebraic_geometry')">algebraic geometry</span>,
+                        <span class="hovHigh" onclick="click_buzzword('optimisation')">optimisation</span>,
+                        <span class="hovHigh" onclick="click_buzzword('neural_network')">neural network</span>,
+                        <span class="hovHigh" onclick="click_buzzword('design')">design</span>,
+                        <span class="hovHigh" onclick="click_buzzword('control')">control</span>,
+                        <span class="hovHigh" onclick="click_buzzword('motion_planning')">motion planning</span>,
+                        <span class="hovHigh" onclick="click_buzzword('cuspidal')">cuspidal robots</span>
+                    </p>
+                    <div class="flexbox">
+                        <a href="resources/resume_durgesh.pdf" target="_blank"><button>Resume</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buzzword" id="algebraic_geometry" style="display: none;" onclick="click_buzzword('algebraic_geometry')">
+                <p>
+                    buzzword: algebraic geometry <br><br>
+                    Currently using it for analysis of cuspidal robots. Worked previously with Jose Capco, University of
+                    Innsbruck and currently involved in discussion with Abhilash Nayak for enhancing the analysis
+                    using the tools from algebraic geometry.
+                </p>
+            </div>
+            <div class="buzzword" id="optimisation" style="display: none;" onclick="click_buzzword('optimisation')">
+                <p>
+                    buzzword: optimisation <br><br>
+                    worked on developing an efficient and accelerated Nelder-Mead algorithm for design optimisation of a
+                    2UPS-1U parallel mechanism including joint limits and collision constraints. used different
+                    algorithm strategies in PhD thesis to find connectivity between two points in T(n) space with closed
+                    algebraic curves.
+                </p>
+            </div>
+            <div class="buzzword" id="neural_network" style="display: none;" onclick="click_buzzword('neural_network')">
+                <p>
+                    buzzword: neural network <br><br>
+                    worked on developing a neural network for design optimisation and mechanism recommendation system.
+                    The system implemented Nelder-Mead algorithm for optimisation to consider the non-smooth constraints
+                    Currently working on interesting project on finance that considers several parameters to optimise
+                    for static algorithms.
+                </p>
+            </div>
+            <div class="buzzword" id="design" style="display: none;" onclick="click_buzzword('design')">
+                <p>
+                    buzzword: design <br><br>
+                    I have worked extensively on design of parallel manipulators used for
+                    force compliance, manufacturing as well as surgical applications. I was involved in multi
+                    robot design for mobile manipulation and quadrotors during my initial years of research. I currently
+                    work on design of serial manipulators, especially manipulators that are cuspidal.
+                </p>
+            </div>
+            <div class="buzzword" id="control" style="display: none;" onclick="click_buzzword('control')">
+                <p>
+                    buzzword: control <br><br>
+                    worked on several projects involving control for passive compliance as well as active compliance in
+                    parallel manipulators. Previous projects include design and control of quadrotor, multi-robot mobile
+                    manipulation. Currently working on time optimal trajectory planning of cuspidal robots.
+                </p>
+            </div>
+            <div class="buzzword" id="motion_planning" style="display: none;" onclick="click_buzzword('motion_planning')">
+                <p>
+                    buzzword: motion planning <br><br>
+                    Previous projects include minimum snap trajectory planning of quadrotor,
+                    contact efficient multi-robot mobile manipulation. Currently working on trajectory planning
+                    framework of cuspidal robots.
+                </p>
+            </div>
+            <div class="buzzword" id="cuspidal" style="display: none;" onclick="click_buzzword('cuspidal')">
+                <p>
+                    buzzword: cuspidal robots <br><br>
+                    Cuspidal robots have multiple inverse kinematic solutions (IKS) in a singularity free region, aspect.
+                    This property allows them to change IKS during path planning and may have dangerous implications if
+                    not taken into account. My PhD thesis involves theoretical study, classification and application of
+                    cuspidality to 6R serial robots
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop_spacer"></div>
+    <div class="desktop_spacer"></div>
+
+    <div class="middleblock">
+        <div class="recent" onclick="click_recent(['recent_list'], ['recent_title', 'Recent news'])">
+            <h3 id="recent_title">- Recent news &#x2191</h3>
+            <div class="spacediv" id="recent_spacediv"></div>
+            <ol id="recent_list" class="dropdown" style="list-style: none">
+<!--                <li>01<sup>st</sup> April : I will start my post doctorate experience at the <a href="https://www.epfl.ch/labs/lasa/fr/accueil/" target="_blank">LASA lab</a>, <a href="https://www.epfl.ch/fr/" target="_blank">EPFL.</a> </li>-->
+                <li>29<sup>th</sup> April : Invited talk at workshop on <a href="https://www.ricam.oeaw.ac.at/specsem/specsem2024/workshop5/" target="_blank">Kinematic Aspects of Robotics.</a> </li>
+            </ol>
+        </div>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="spacer_small"></div>
+
+    <div class="middleblock">
+        <div class="recent" onclick="click_recent(['current_list'], ['current_title', 'Currently working on...'])">
+            <h3 id="current_title">- Currently working on... &#x2191</h3>
+            <div class="spacediv" id="current_spacediv"></div>
+            <ol id="current_list" class="dropdown">
+                <li>Working on a conjecture related to 6R cuspidal robots</li>
+                <li>Collaboration with <a href="https://scholar.google.com/citations?user=Ku2w7U0AAAAJ&hl=en" target="_blank">Keerthi Sagar</a> on cuspidal robots</li>
+                <li>Collaboration with <a href="https://www.hslu.ch/en/lucerne-university-of-applied-sciences-and-arts/about-us/people-finder/profile/?pid=5977" target="_blank">Abhilash Nayak</a> on climbing robots</li>
+                <li>Working on deep learning methodologies for application in finance</li>
+            </ol>
+        </div>
+    </div>
+
+    <!--<div class="spacer"></div>-->
+
+    <footer id="footId">
+        <p><span style="color: var(--halycon);">Designed by: </span> <span style="color: var(--navbarcolor);">durgesh.salunkhe</span></p>
+        <p class="emailBlock" id="emailid"><img src="images/email_indark.png" alt="email"> &nbsp <a href = "mailto: salunkhedurgesh@gmail.com">
+                <span style="font-family: 'PT Mono', monospace; letter-spacing: 0.06rem; color: var(--navbarcolor);">salunkhedurgesh@gmail.com</span></a></p>
+    </footer>
+
+
+</body>
+</html>
