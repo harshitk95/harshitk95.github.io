@@ -43,6 +43,10 @@
           <p>2020 - 2024</p>
         </div> -->
 
+        <br>
+        <br>
+
+
         <div class="project_cover">
           <p class="project_title">Hitting with different joints of a manipulator</p>
           <div class="project">
@@ -95,8 +99,8 @@
         <div class="project_cover">
           <p class="project_title">Automated Air Hockey Inspired Dual Arm Hitting Framework</p>
           <div class="project">
-            <div class="project_image" id="iam_1" style="display: flex;">
-              <img src="resources/figures/ecarp-1.png" alt="ecarp" onclick="project_image_click('ecarp1', 'ecarp2')">
+            <div class="project_image" id="hockey_1" style="display: flex;">
+              <img src="resources/figures/Airhockey_Golf/experimental_setup.png" alt="ecarp" onclick="project_image_click('hockey_1', 'hockey_1')">
               <p></p>
             </div>
             <!-- <div class="project_image" id="ecarp2" style="display: none;">
@@ -125,6 +129,96 @@
                 the errors in the controls for the hitting flux, we model the stochastic relationship between hitting impulse 
                 and object's resulting displacement, using full density modeling.  Further we show the application of the learnt 
                 motion model for planning sequential hits with two or more robots, in a Golf-like principle, to let an object reach a location far beyond reach of any single  robot. 
+                
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+
+        <div class="project_cover">
+          <p class="project_title">Repeatable Motion Generation for a robot to hit an object</p>
+          <div class="project">
+            <div class="project_image" id="flux_1" style="display: flex;">
+              <img src="resources/figures/Motion Planning and Inertia Based Control/image_concept.png" alt="flux" onclick="project_image_click('flux_1', 'flux_1')">
+              <p></p>
+            </div>
+            <!-- <div class="project_image" id="ecarp2" style="display: none;">
+              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
+              <p>Nonsingular change of solutions</p>
+            </div>
+            <div class="project_image" id="ecarp3" style="display: none;">
+              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
+              <p>Regions with multiple IKS in the workspace</p>
+            </div>
+            <div class="project_image" id="ecarp4" style="display: none;">
+              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
+              <p>Video submission ICRA 2023</p>
+            </div> -->
+
+            <div class="project_description">
+              <p>
+                <span class="highlight">Description</span>: <br><br>
+                In this article, we propose a metric called hitting flux, which is used in the motion generation and controls 
+                for a robot manipulator to interact with the environment through a hitting or a striking motion. 
+                Given the task of placing a known object outside of the workspace of the robot, the robot needs 
+                to come in contact with it at a nonzero relative speed. The configuration of the robot and the speed 
+                at contact matter because they affect the motion of the object. The physical quantity called hitting flux 
+                depends on the robot's configuration, the robot speed, and the properties of the environment. 
+                An approach to achieve the desired directional preimpact flux for the robot through a combination 
+                of a dynamical system for motion generation and a control system that regulates the directional inertia 
+                of the robot is presented. Furthermore, a quadratic program formulation for achieving a desired inertia matrix 
+                at a desired position while following a motion plan constrained to the robot limits is presented. 
+                The system is tested for different scenarios in simulation showing the repeatability of the procedure 
+                and in real scenarios with KUKA LBR iiwa 7 robot.
+                
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+
+        <div class="project_cover">
+          <p class="project_title">Learning to Hit</p>
+          <div class="project">
+            <div class="project_image" id="learn_1" style="display: flex;">
+              <img src="resources/figures/Motion Planning and Inertia Based Control/image_concept.png" alt="learn" onclick="project_image_click('learn_1', 'learn_1')">
+              <p></p>
+            </div>
+            <!-- <div class="project_image" id="ecarp2" style="display: none;">
+              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
+              <p>Nonsingular change of solutions</p>
+            </div>
+            <div class="project_image" id="ecarp3" style="display: none;">
+              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
+              <p>Regions with multiple IKS in the workspace</p>
+            </div>
+            <div class="project_image" id="ecarp4" style="display: none;">
+              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
+              <p>Video submission ICRA 2023</p>
+            </div> -->
+
+            <div class="project_description">
+              <p>
+                <span class="highlight">Description</span>: <br><br>
+                In this article, we propose a metric called hitting flux, which is used in the motion generation and controls 
+                for a robot manipulator to interact with the environment through a hitting or a striking motion. 
+                Given the task of placing a known object outside of the workspace of the robot, the robot needs 
+                to come in contact with it at a nonzero relative speed. The configuration of the robot and the speed 
+                at contact matter because they affect the motion of the object. The physical quantity called hitting flux 
+                depends on the robot's configuration, the robot speed, and the properties of the environment. 
+                An approach to achieve the desired directional preimpact flux for the robot through a combination 
+                of a dynamical system for motion generation and a control system that regulates the directional inertia 
+                of the robot is presented. Furthermore, a quadratic program formulation for achieving a desired inertia matrix 
+                at a desired position while following a motion plan constrained to the robot limits is presented. 
+                The system is tested for different scenarios in simulation showing the repeatability of the procedure 
+                and in real scenarios with KUKA LBR iiwa 7 robot.
                 
               </p>
             </div>
