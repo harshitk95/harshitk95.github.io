@@ -24,7 +24,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: #03122b;
+    background-color: #000000;
     min-height: 100vh;
     color: white;
     font-family: Rubik, sans-serif;
