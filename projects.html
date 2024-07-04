@@ -37,20 +37,24 @@
         <p onclick="click_experience('projects')">Projects</p>
     </div>
 
-    <div class="publications" id="projects" style="display: flex;">
-      <div class="year_block year23">
+    <!-- <div class="publications" id="projects" style="display: flex;">
+      <div class="year_block year24">
         <div class="year">
-          <p>2020 - 2023</p>
-        </div>
+          <p>2020 - 2024</p>
+        </div> -->
 
-        <!-- <div class="project_cover">
-          <p class="project_title">Efficient and Certified Algorithms for Robot motion Planning</p>
+        <div class="project_cover">
+          <p class="project_title">Hitting with different joints of a manipulator</p>
           <div class="project">
-            <div class="project_image" id="ecarp1" style="display: flex;">
-              <img src="resources/figures/ecarp-1.png" alt="ecarp" onclick="project_image_click('ecarp1', 'ecarp2')">
-              <p>Two IKS of JACO robot</p>
+            <div class="project_image" id="iam_1" style="display: flex;">
+              <img src="resources/figures/Whole Body Hitting/proof_concept_1.png" alt="iam" onclick="project_image_click('iam_1', 'iam_2')">
+              <p></p>
             </div>
-            <div class="project_image" id="ecarp2" style="display: none;">
+            <div class="project_image" id="iam_2" style="display: none;">
+              <img src="resources/figures/Whole Body Hitting/proof_concept_2.png" alt="iam" onclick="project_image_click('iam_2', 'iam_1')">
+              <p></p>
+            </div>
+            <!-- <div class="project_image" id="ecarp2" style="display: none;">
               <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
               <p>Nonsingular change of solutions</p>
             </div>
@@ -61,40 +65,80 @@
             <div class="project_image" id="ecarp4" style="display: none;">
               <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
               <p>Video submission ICRA 2023</p>
-            </div>
+            </div> -->
 
             <div class="project_description">
               <p>
                 <span class="highlight">Description</span>: <br><br>
-                The project titled "Efficient and Certified Algorithms for Robot motion Planning" (ECARP) is a joint project
-                between the Agence National de Recherché (ANR), France and Fonds zur Förderung der wissenschaftlichen
-                Forschung (FWF), Austria.
-
-                ECARP targets major computational challenges in three related fields: computer algebra, nonlinear
-                computational geometry and robotics. There are three parts of the projects: <br>
-                Part 1. Roadmap algorithms and high-performance computing - Paris Team<br>
-                Part 2. Serial manipulators: cuspidality analysis and trajectory planning - Nantes Team<br>
-                Part 3. Parallel manipulators: analysis of aspects - Austria Team <br>
-
-                <br><br>
-                <span class="highlight">Members</span>: <br><br>
-                Paris: Mohab Safey El Din, Jeremy Berthomieu, Jean Charles Faugère, Rémi Prébet <br>
-                Nantes: Philippe Wenger, Damien Chablat, Harshit Khurana <br>
-                Austria (Innsbruck): Jose Capco, Christoforos Spartalis <br>
-                Austria (Linz): Andreas Muller, Josef Schicho, Tobias Marauli <br>
+                This project builds up the skill of impact aware non prehensile manipulation 
+                through a hitting motion by allowing the robot arm to come in contact with the 
+                environment with parts other than its end effector. 
+                In tasks where directional effective inertia of a robot is important at the contact point, 
+                it is useful to understand inertia not just at the end effector of the robot 
+                but also at other points of the robot. 
+                Hitting with other joints allows us to manipulate heavier objects since 
+                the robot effective inertia is higher at joints other than its end effector. 
+                We propose a methodology for selecting a hitting joint based on the hitting task requirements, 
+                impact posture generation for the robot and a smooth generation of desired directional inertia values through a hitting motion.
+                
               </p>
             </div>
           </div>
-        </div> -->
+        </div>
+        
+        <br>
+        <br>
+        <!-- </div> -->
 
-      </div>
+        
 
-      <div class="year_block year20">
+        <div class="project_cover">
+          <p class="project_title">Automated Air Hockey Inspired Dual Arm Hitting Framework</p>
+          <div class="project">
+            <div class="project_image" id="iam_1" style="display: flex;">
+              <img src="resources/figures/ecarp-1.png" alt="ecarp" onclick="project_image_click('ecarp1', 'ecarp2')">
+              <p></p>
+            </div>
+            <!-- <div class="project_image" id="ecarp2" style="display: none;">
+              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
+              <p>Nonsingular change of solutions</p>
+            </div>
+            <div class="project_image" id="ecarp3" style="display: none;">
+              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
+              <p>Regions with multiple IKS in the workspace</p>
+            </div>
+            <div class="project_image" id="ecarp4" style="display: none;">
+              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
+              <p>Video submission ICRA 2023</p>
+            </div> -->
+
+            <div class="project_description">
+              <p>
+                <span class="highlight">Description</span>: <br><br>
+                This paper presents a data collection framework and a learning model to understand 
+                the motion of an object after being subject to an impulse. 
+                The data collection framework consists of an automated dual arm setup hitting an object to each other, 
+                like a collaborative air-hockey game. The design of the system is further detailed in the system. 
+                An impact aware extended Kalman filter is proposed for automation of the air-hockey setup which 
+                approximates the discontinuous impulse motion equations through a hitting force model by balancing 
+                the energies during collision. To capture the variance in the motion that stochasticity of friction introduces, 
+                the errors in the controls for the hitting flux, we model the stochastic relationship between hitting impulse 
+                and object's resulting displacement, using full density modeling.  Further we show the application of the learnt 
+                motion model for planning sequential hits with two or more robots, in a Golf-like principle, to let an object reach a location far beyond reach of any single  robot. 
+                
+              </p>
+            </div>
+          </div>
+        </div>
+
+      <!-- </div> -->
+
+      <!-- <div class="year_block year20">
         <div class="year">
           <p>
             2016 - 2020
           </p>
-        </div>
+        </div> -->
 
         <!-- <div class="project_cover">
           <p class="project_title">Optimal kinematic design of a parallel manipulator for otological surgery</p>
