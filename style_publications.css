@@ -48,9 +48,10 @@ a{
     max-width: 90vw;
     position: sticky;
     top: 2.5rem;
+    /* left: 10rem; */
     justify-content: center;
     align-items: center;
-    margin-left: auto;
+    /* margin-left: 10em; */
     /*border-top: var(--halycon) 1px solid;*/
     margin-top: 3rem;
     z-index: 2;
