@@ -16,8 +16,9 @@
     --title-color:#ffffff;
     /*--halycon: #64ffda;*/
     --halycon: #00eeb6;
-    --blueBC: #8892b0;
-    --paper_color:#8892b0;
+    --blueBC: #fffdef;
+    /* --blueBC: #8892b0; */
+    --paper_color:#f6ffe9;
     --background_color: #000000;
 }
 
@@ -87,21 +88,21 @@ body{
 }
 
 .highlight{
-    color: var(--title-color); font-size: 0.9rem;
+    color: var(--title-color); font-size: 1.1rem;
     /*border-bottom: var(--title-color) 1px solid;*/
     /*padding:0.05rem;*/
 }
 
 .project_description p{
     font-weight: lighter;
-    font-size: 0.7rem;
+    font-size: 1.0rem;
     color: var(--paper_color);
     line-height: 1.5rem;
     text-align: justify;
 }
 
 .project_cover .project_title{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: lighter;
     color: var(--title-color);
     /*color: var(--halycon);*/

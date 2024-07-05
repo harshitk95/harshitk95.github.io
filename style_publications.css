@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Life+Savers&family=Texturina:opsz@12..72&display=swap');
 
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Rubik, sans-serif;
@@ -16,7 +16,7 @@
     --title-color:#ffffff;
     /*--halycon: #64ffda;*/
     --halycon: #00eeb6;
-    --blueBC: #8892b0;
+    --blueBC: #ffffff;
     --paper_color:#8892b0;
     --background_color: #000000;
 }
@@ -53,6 +53,7 @@ a{
     align-items: center;
     /* margin-left: 10em; */
     /*border-top: var(--halycon) 1px solid;*/
+    /* border-left: 2rem; */
     margin-top: 3rem;
     z-index: 2;
 }
@@ -390,6 +391,7 @@ a{
         position: sticky;
         top: 2.5rem;
         border: none;
+        /* margin-left: auto; */
         margin-top: 0;
     }
 
