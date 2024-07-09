@@ -38,7 +38,8 @@ body{
     justify-content: center;
     align-items: center;
     max-width: 85vw;
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
+    margin-left: auto;
     margin-right: 2vw;
     /*border: #f09d51 1px solid;*/
 }
