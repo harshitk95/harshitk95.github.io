@@ -436,13 +436,14 @@ a{
 footer{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top: max(100vh, 110%);
     min-width: 100vw;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.5rem;
+    z-index: -1;
 }
 
 .emailBlock{
