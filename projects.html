@@ -26,218 +26,75 @@
 
   <div class="topBack"></div>
 
-  <div class="imageblock" id="logoBlock", style ="z-index: 5;">
+  <div class="imageblock" id="logoBlock">
     <a href="https://www.linkedin.com/in/harshitkhurana95/"><img src="../images/linkedIn_perso.png" alt="LinkedIn"></a>
     <a href="https://www.instagram.com/harshitkh95/"><img src="../images/instagram_perso.png" alt="instagram"></a>
     <a href="https://github.com/harshitk95"><img src="../images/github_perso.png" alt="github"></a>
   </div>
 
   <div class="content">
-    <div class="title" style="z-index: 1">
+    <div class="title" style="z-index: 2">
         <p onclick="click_experience('projects')">Projects</p>
     </div>
 
-    <!-- <div class="publications" id="projects" style="display: flex;">
-      <div class="year_block year24">
+    <div class="publications" id="projects" style="display: flex;">
+      <div class="year_block year23">
         <div class="year">
-          <p>2020 - 2024</p>
+          <p>2020 - 2023</p>
+        </div>
+
+        <!-- <div class="project_cover">
+          <p class="project_title">Efficient and Certified Algorithms for Robot motion Planning</p>
+          <div class="project">
+            <div class="project_image" id="ecarp1" style="display: flex;">
+              <img src="resources/figures/ecarp-1.png" alt="ecarp" onclick="project_image_click('ecarp1', 'ecarp2')">
+              <p>Two IKS of JACO robot</p>
+            </div>
+            <div class="project_image" id="ecarp2" style="display: none;">
+              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
+              <p>Nonsingular change of solutions</p>
+            </div>
+            <div class="project_image" id="ecarp3" style="display: none;">
+              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
+              <p>Regions with multiple IKS in the workspace</p>
+            </div>
+            <div class="project_image" id="ecarp4" style="display: none;">
+              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
+              <p>Video submission ICRA 2023</p>
+            </div>
+
+            <div class="project_description">
+              <p>
+                <span class="highlight">Description</span>: <br><br>
+                The project titled "Efficient and Certified Algorithms for Robot motion Planning" (ECARP) is a joint project
+                between the Agence National de Recherché (ANR), France and Fonds zur Förderung der wissenschaftlichen
+                Forschung (FWF), Austria.
+
+                ECARP targets major computational challenges in three related fields: computer algebra, nonlinear
+                computational geometry and robotics. There are three parts of the projects: <br>
+                Part 1. Roadmap algorithms and high-performance computing - Paris Team<br>
+                Part 2. Serial manipulators: cuspidality analysis and trajectory planning - Nantes Team<br>
+                Part 3. Parallel manipulators: analysis of aspects - Austria Team <br>
+
+                <br><br>
+                <span class="highlight">Members</span>: <br><br>
+                Paris: Mohab Safey El Din, Jeremy Berthomieu, Jean Charles Faugère, Rémi Prébet <br>
+                Nantes: Philippe Wenger, Damien Chablat, Harshit Khurana <br>
+                Austria (Innsbruck): Jose Capco, Christoforos Spartalis <br>
+                Austria (Linz): Andreas Muller, Josef Schicho, Tobias Marauli <br>
+              </p>
+            </div>
+          </div>
         </div> -->
 
-        <br>
-        <br>
+      </div>
 
-
-        <div class="project_cover">
-          <p class="project_title">Hitting with different joints of a manipulator</p>
-          <div class="project">
-            <div class="project_image" id="iam_1" style="display: flex;">
-              <img src="resources/figures/Whole Body Hitting/proof_concept_1.png" alt="iam" onclick="project_image_click('iam_1', 'iam_2')">
-              <p></p>
-            </div>
-            <div class="project_image" id="iam_2" style="display: none;">
-              <img src="resources/figures/Whole Body Hitting/proof_concept_2.png" alt="iam" onclick="project_image_click('iam_2', 'iam_1')">
-              <p></p>
-            </div>
-            <!-- <div class="project_image" id="ecarp2" style="display: none;">
-              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
-              <p>Nonsingular change of solutions</p>
-            </div>
-            <div class="project_image" id="ecarp3" style="display: none;">
-              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
-              <p>Regions with multiple IKS in the workspace</p>
-            </div>
-            <div class="project_image" id="ecarp4" style="display: none;">
-              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
-              <p>Video submission ICRA 2023</p>
-            </div> -->
-
-            <div class="project_description">
-              <p>
-                <span class="highlight">Description</span>: <br><br>
-                This project builds up the skill of impact aware non prehensile manipulation 
-                through a hitting motion by allowing the robot arm to come in contact with the 
-                environment with parts other than its end effector. 
-                In tasks where directional effective inertia of a robot is important at the contact point, 
-                it is useful to understand inertia not just at the end effector of the robot 
-                but also at other points of the robot. 
-                Hitting with other joints allows us to manipulate heavier objects since 
-                the robot effective inertia is higher at joints other than its end effector. 
-                We propose a methodology for selecting a hitting joint based on the hitting task requirements, 
-                impact posture generation for the robot and a smooth generation of desired directional inertia values through a hitting motion.
-                
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <br>
-        <br>
-        <!-- </div> -->
-
-        
-
-        <div class="project_cover">
-          <p class="project_title">Automated Air Hockey Inspired Dual Arm Hitting Framework</p>
-          <div class="project">
-            <div class="project_image" id="hockey_1" style="display: flex;">
-              <img src="resources/figures/Airhockey_Golf/experimental_setup.png" alt="ecarp" onclick="project_image_click('hockey_1', 'hockey_1')">
-              <p></p>
-            </div>
-            <!-- <div class="project_image" id="ecarp2" style="display: none;">
-              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
-              <p>Nonsingular change of solutions</p>
-            </div>
-            <div class="project_image" id="ecarp3" style="display: none;">
-              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
-              <p>Regions with multiple IKS in the workspace</p>
-            </div>
-            <div class="project_image" id="ecarp4" style="display: none;">
-              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
-              <p>Video submission ICRA 2023</p>
-            </div> -->
-
-            <div class="project_description">
-              <p>
-                <span class="highlight">Description</span>: <br><br>
-                This paper presents a data collection framework and a learning model to understand 
-                the motion of an object after being subject to an impulse. 
-                The data collection framework consists of an automated dual arm setup hitting an object to each other, 
-                like a collaborative air-hockey game. The design of the system is further detailed in the system. 
-                An impact aware extended Kalman filter is proposed for automation of the air-hockey setup which 
-                approximates the discontinuous impulse motion equations through a hitting force model by balancing 
-                the energies during collision. To capture the variance in the motion that stochasticity of friction introduces, 
-                the errors in the controls for the hitting flux, we model the stochastic relationship between hitting impulse 
-                and object's resulting displacement, using full density modeling.  Further we show the application of the learnt 
-                motion model for planning sequential hits with two or more robots, in a Golf-like principle, to let an object reach a location far beyond reach of any single  robot. 
-                
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <br>
-        <br>
-
-
-        <div class="project_cover">
-          <p class="project_title">Repeatable Motion Generation for a robot to hit an object</p>
-          <div class="project">
-            <div class="project_image" id="flux_1" style="display: flex;">
-              <img src="resources/figures/Motion Planning and Inertia Based Control/image_concept.png" alt="flux" onclick="project_image_click('flux_1', 'flux_1')">
-              <p></p>
-            </div>
-            <!-- <div class="project_image" id="ecarp2" style="display: none;">
-              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
-              <p>Nonsingular change of solutions</p>
-            </div>
-            <div class="project_image" id="ecarp3" style="display: none;">
-              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
-              <p>Regions with multiple IKS in the workspace</p>
-            </div>
-            <div class="project_image" id="ecarp4" style="display: none;">
-              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
-              <p>Video submission ICRA 2023</p>
-            </div> -->
-
-            <div class="project_description">
-              <p>
-                <span class="highlight">Description</span>: <br><br>
-                In this article, we propose a metric called hitting flux, which is used in the motion generation and controls 
-                for a robot manipulator to interact with the environment through a hitting or a striking motion. 
-                Given the task of placing a known object outside of the workspace of the robot, the robot needs 
-                to come in contact with it at a nonzero relative speed. The configuration of the robot and the speed 
-                at contact matter because they affect the motion of the object. The physical quantity called hitting flux 
-                depends on the robot's configuration, the robot speed, and the properties of the environment. 
-                An approach to achieve the desired directional preimpact flux for the robot through a combination 
-                of a dynamical system for motion generation and a control system that regulates the directional inertia 
-                of the robot is presented. Furthermore, a quadratic program formulation for achieving a desired inertia matrix 
-                at a desired position while following a motion plan constrained to the robot limits is presented. 
-                The system is tested for different scenarios in simulation showing the repeatability of the procedure 
-                and in real scenarios with KUKA LBR iiwa 7 robot.
-                
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <br>
-        <br>
-
-
-        <div class="project_cover">
-          <p class="project_title">Learning to Hit through Dynamical Systems</p>
-          <div class="project">
-            <div class="project_image" id="learn_1" style="display: flex;">
-              <img src="resources/figures/Learning to Hit/EPFL_box_approach.png" alt="learn" onclick="project_image_click('learn_1', 'learn_2')">
-              <p></p>
-            </div>
-            <div class="project_image" id="learn_2" style="display: none;">
-              <img src="resources/figures/Learning to Hit/EPFL_box_hit.png" alt="learn" onclick="project_image_click('learn_2', 'learn_3')">
-              <p></p>
-            </div>
-            <div class="project_image" id="learn_3" style="display: none;">
-              <img src="resources/figures/Learning to Hit/EPFL_box_motion.png" alt="learn" onclick="project_image_click('learn_3', 'learn_1')">
-              <p></p>
-            </div>
-            <!-- <div class="project_image" id="ecarp2" style="display: none;">
-              <img src="resources/figures/ecarp-2.png" alt="ecarp" onclick="project_image_click('ecarp2', 'ecarp3')">
-              <p>Nonsingular change of solutions</p>
-            </div>
-            <div class="project_image" id="ecarp3" style="display: none;">
-              <img src="resources/figures/ecarp-3.png" alt="ecarp" onclick="project_image_click('ecarp3', 'ecarp4')">
-              <p>Regions with multiple IKS in the workspace</p>
-            </div>
-            <div class="project_image" id="ecarp4" style="display: none;">
-              <iframe src="https://player.vimeo.com/video/807131888?h=86478da33e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Trajectory planning issues in commercial cuspidal robots"></iframe>
-              <p>Video submission ICRA 2023</p>
-            </div> -->
-
-            <div class="project_description">
-              <p>
-                <span class="highlight">Description</span>: <br><br>
-                This paper proposes a manipulation scheme based on learning the motion of objects 
-                after being hit by a robotic end-effector. This allows for the object to be positioned 
-                at a desired location outside the physical workspace of the robot. 
-                An estimate of the object dynamics under friction and collisions is learnt and used 
-                to predict the desired hitting parameters (speed and direction), 
-                given the initial and desired location of the object. 
-                Based on the obtained hitting parameters, the desired pre-impact velocity of the end-effector 
-                is generated using a stable dynamical system. The performance of the proposed DS is validated in simulation 
-                and and is used to learn a model for hitting using real robot. The approach is tested on real robot with a KUKA LBR IIWA robot.
-                
-              </p>
-            </div>
-          </div>
-        </div>
-
-      <!-- </div> -->
-
-      <!-- <div class="year_block year20">
+      <div class="year_block year20">
         <div class="year">
           <p>
             2016 - 2020
           </p>
-        </div> -->
+        </div>
 
         <!-- <div class="project_cover">
           <p class="project_title">Optimal kinematic design of a parallel manipulator for otological surgery</p>
@@ -291,7 +148,7 @@
           </div>
         </div> -->
 
-      <!-- </div> -->
+      </div>
 
       <!-- <div class="year_block year17">
         <div class="year">
