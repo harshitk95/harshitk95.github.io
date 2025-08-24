@@ -90,18 +90,25 @@ a{
     justify-content: flex-start;
 }
 
+/* Center the main content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .year_block{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1024px;
-    width: 80vw;
+    max-width: 1200px;
+    width: 95vw;
     /*border: saddlebrown 1px solid;*/
 }
 
 .year_block p{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .year{
@@ -115,6 +122,10 @@ a{
     padding-top: 0.5rem;
     background: var(--background_color);
     z-index: 0;
+}
+
+.year p{
+    font-size: 2.5rem;
 }
 
 .experience {
@@ -158,8 +169,8 @@ a{
 .paper{
     display: flex;
     flex-direction: column;
-    max-width: 1024px;
-    width: 80vw;
+    max-width: 1200px;
+    width: 95vw;
     margin-bottom: 2rem;
     margin-left: 5vw;
     /*border: white 3px solid;*/
@@ -170,17 +181,24 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1024px;
-    width: 80vw;
+    max-width: 1200px;
+    width: 95vw;
+}
+
+/* Center the publications and talks blocks */
+.publications, .talks {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .talks{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    max-width: 1024px;
-    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 95vw;
 }
 
 .skillTitle{
@@ -203,6 +221,13 @@ a{
     width: 100%;
 }
 
+.paper_title .paper_heading{
+    font-size: 2rem;
+    color: var(--title-color);
+    text-align: left;
+    /*border: #00eeb6 1px solid;*/
+}
+
 .action_row{
     display: flex;
     flex-direction: row;
@@ -219,13 +244,6 @@ a{
 .action_row p{
     color: var(--blueBC);
     text-align: center;
-}
-
-.paper_title .paper_heading{
-    font-size: 1.3rem;
-    color: var(--title-color);
-    text-align: left;
-    /*border: #00eeb6 1px solid;*/
 }
 
 .paper_title .awards{
@@ -263,13 +281,13 @@ a{
 }
 
 .paper_description p{
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     color: var(--paper_color);
 }
 
 .paper_description .authors{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
     margin-top: 1rem;
     text-align: left;
