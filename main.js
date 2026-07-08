@@ -94,26 +94,26 @@ function click_experience(address){
 function blink() {
     let el = document.getElementById("logoBlock");
     let foot = document.getElementById("emailid");
-    el.classList.remove("blink")
-    foot.classList.remove("blink")
+    if (el) el.classList.remove("blink")
+    if (foot) foot.classList.remove("blink")
 
 
     setTimeout(function() {
-        el.classList.add("blink")
-        foot.classList.add("blink")
+        if (el) el.classList.add("blink")
+        if (foot) foot.classList.add("blink")
     }, 5);
 }
 
 function changeTheme() {
     let el = document.getElementById("logoBlock");
     let foot = document.getElementById("emailid");
-    el.classList.remove("blink")
-    foot.classList.remove("blink")
+    if (el) el.classList.remove("blink")
+    if (foot) foot.classList.remove("blink")
 
 
     setTimeout(function() {
-        el.classList.add("blink")
-        foot.classList.add("blink")
+        if (el) el.classList.add("blink")
+        if (foot) foot.classList.add("blink")
     }, 5);
 }
 
