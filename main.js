@@ -119,6 +119,7 @@ function changeTheme() {
 
 window.addEventListener("scroll", () => {
     const name_holder = document.getElementById("small_name")
+    if (!name_holder) return;
     const current = window.scrollY;
     let w = window.innerWidth;
     let h = window.innerHeight;

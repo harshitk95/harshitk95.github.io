@@ -1,0 +1,161 @@
+/* ============================================================
+   Publications page — modern card restyle (matches experience)
+   Scoped under .content so shared style_publications.css is safe.
+   ============================================================ */
+
+.content {
+    align-items: stretch;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 7rem 6vw 6rem;
+}
+
+/* section blocks full width */
+.content .publications,
+.content .talks {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    align-items: stretch;
+}
+
+.content .year_block {
+    width: 100%;
+    max-width: 100%;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- year label (was a huge sticky header) ---------- */
+.content .year {
+    position: static;
+    width: auto;
+    text-align: left;
+    background: transparent;
+    margin: 0 0 0.9rem 0;
+    padding: 0;
+    z-index: auto;
+}
+
+.content .year p {
+    font-family: 'PT Mono', monospace;
+    font-size: 0.95rem;
+    letter-spacing: 0.12rem;
+    color: var(--halycon, #00eeb6);
+}
+
+/* ---------- paper card ---------- */
+.content .paper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 1.3rem 1.5rem;
+    transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.content .paper:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 238, 182, 0.35);
+    background: rgba(0, 238, 182, 0.05);
+}
+
+.content .paper_description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin-bottom: 0;
+}
+
+/* ---------- action icons ---------- */
+.content .action_row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.35rem;
+    min-width: 4rem;
+    max-width: none;
+    margin-top: 0.25rem;
+}
+
+.content .action_row img {
+    width: 1.05rem;
+    height: 1.05rem;
+    opacity: 0.75;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.content .action_row a:hover img {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* ---------- headings & authors ---------- */
+.content .paper_title {
+    width: 100%;
+}
+
+.content .paper_title .paper_heading {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.content .paper_description .authors {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #8892b0;
+    margin-top: 0.5rem;
+    width: auto;
+    max-width: 100%;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.content .authors ins {
+    color: #ccd6f6;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 238, 182, 0.5);
+}
+
+.content .paper_description p {
+    color: #8892b0;
+}
+
+/* ---------- abstract ---------- */
+.content .abstract p {
+    font-size: 0.92rem;
+    color: #8892b0;
+    line-height: 1.6;
+    border-top: 1px solid rgba(0, 238, 182, 0.35);
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+    text-align: justify;
+}
+
+/* ---------- section headers spacing ---------- */
+.content .exp-h2 {
+    margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .content {
+        padding-top: 6rem;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .content .paper {
+        padding: 1.1rem 1.2rem;
+    }
+
+    .content .paper_title .paper_heading {
+        font-size: 1.05rem;
+    }
+}

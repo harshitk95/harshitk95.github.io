@@ -1,0 +1,145 @@
+/* ============================================================
+   Projects page — modern card restyle (matches experience page)
+   Scoped under .content so the shared style_projects.css used by
+   the personal pages is not affected.
+   ============================================================ */
+
+.content {
+    align-items: stretch;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 7rem 6vw 6rem;
+}
+
+/* ---------- project card ---------- */
+.content .project_cover {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1.6rem 0;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.6rem 1.8rem;
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.content .project_cover:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 238, 182, 0.35);
+    background: rgba(0, 238, 182, 0.05);
+}
+
+.content .project_cover .project_title {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- inner layout ---------- */
+.content .project {
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: stretch;
+}
+
+/* ---------- media ---------- */
+.content .project_image {
+    max-width: 100%;
+    gap: 0.5rem;
+}
+
+.content .project_image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    translate: none;
+}
+
+.content .project_image iframe {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    border-radius: 12px;
+}
+
+.content .project_image p {
+    color: #8892b0;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: 'PT Mono', monospace;
+}
+
+/* ---------- description ---------- */
+.content .project_description {
+    width: 100%;
+    margin: 0;
+}
+
+.content .project_description p {
+    font-weight: 300;
+    font-size: 0.98rem;
+    color: #8892b0;
+    line-height: 1.65;
+    text-align: left;
+}
+
+.content .highlight {
+    color: var(--halycon, #00eeb6);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* ---------- desktop: media beside description ---------- */
+@media only screen and (min-width: 800px) {
+    .content .project {
+        display: grid;
+        grid-template-columns: 5fr 6fr;
+        grid-template-rows: auto;
+        gap: 1.8rem;
+        align-items: center;
+    }
+
+    .content .project_image {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content .project_image img {
+        width: 100%;
+        translate: none;
+    }
+
+    .content .project_description {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .content .project_description p {
+        font-size: 0.95rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content {
+        padding-top: 6rem;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .content .project_cover {
+        padding: 1.3rem 1.3rem;
+    }
+}

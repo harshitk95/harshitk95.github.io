@@ -1,0 +1,73 @@
+/* ============================================================
+   Old-book typography — applied site-wide (loaded LAST)
+   Body:     EB Garamond   (classic book serif)
+   Headings: Libre Baskerville (display book serif)
+   Small monospace date/eyebrow labels are left untouched.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* base body serif everywhere (mono labels keep their explicit rules) */
+* {
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+}
+
+/* headings & titles get the display book face */
+h1, h2, h3, h4, h5,
+.exp-title, .exp-h2, .exp-sub,
+.home-name h1, .home-role, .ql-title,
+.p-name h1, .p-role, .p-h2, .p-ql-title, .p-card-title, .p-video-title,
+.tl-role, .award-name,
+.project_cover .project_title,
+.paper_title .paper_heading,
+.hero h1, .hero h2, .nameblock h1, .subnameblock h1,
+.middleblock h2, .middleblock h3, .profileDetails h2 {
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    letter-spacing: 0;
+}
+
+/* book-like body copy: a touch larger and more airy */
+p, li,
+.about-text p, .tl-desc, .exp-sub,
+.paper_description p, .paper_description .authors, .abstract p,
+.project_description p, .p-about-text p, .p-card-desc, .p-video-desc,
+.profileDetails p, .feed-list li {
+    line-height: 1.7;
+}
+
+/* EB Garamond runs small — scale body copy up for readability */
+body {
+    font-size: 1.12rem;
+}
+
+.about-text p,
+.p-about-text p,
+.tl-desc,
+.project_description p,
+.abstract p,
+.p-video-desc,
+.paper_description .authors,
+.p-card-desc,
+.ql-desc, .p-ql-desc,
+.feed-list li,
+.profileDetails p {
+    font-size: 1.2rem;
+}
+
+.exp-sub, .home-role, .p-role {
+    font-size: 1.35rem;
+}
+
+.tl-role, .ql-title, .p-ql-title, .p-card-title, .p-video-title,
+.project_cover .project_title, .paper_title .paper_heading, .award-name {
+    font-size: 1.35rem;
+}
+
+.chip, .p-chip {
+    font-size: 1.02rem;
+}
+
+/* EB Garamond emphasis reads beautifully in italic */
+em, .tl-desc em, .about-text em {
+    font-style: italic;
+}

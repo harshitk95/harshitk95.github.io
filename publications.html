@@ -5,6 +5,9 @@
     <title>Harshit Khurana</title>
     <link rel="stylesheet" href="style_publications.css?rnd=18">
     <link rel="stylesheet" href="style.css?rnd=18">
+    <link rel="stylesheet" href="style_experience.css?rnd=3">
+    <link rel="stylesheet" href="style_publications_cards.css?rnd=1">
+    <link rel="stylesheet" href="style_book.css?rnd=2">
     <script type="text/javascript" src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
@@ -38,9 +41,11 @@
 <div class="topBack"></div>
 
 <div class="content">
-    <div class="title" style="z-index: 1">
-        <p onclick="click_experience('publication')">Publications</p>
-    </div>
+    <header class="exp-hero">
+        <p class="exp-eyebrow">Peer-reviewed Research</p>
+        <h1 class="exp-title">Publications</h1>
+        <p class="exp-sub">Journal and conference papers, theses and invited talks in robotics, control and optimization.</p>
+    </header>
 
     <div class="publications" id="publication">
         <!-- was: style="display: none;" -->
@@ -350,9 +355,7 @@
     <!-- <div class="skill_spacer"></div> -->
 
     <div class="spacer_small"></div>
-    <div class="title" style="z-index: 1;">
-        <p onclick="click_experience('thesis')">Theses</p>
-    </div>
+    <h2 class="exp-h2"><span class="exp-h2-accent">§</span> Theses</h2>
 
     <div class="publications" id="thesis">
         <!-- was: style="display: none;" -->
@@ -441,11 +444,9 @@
     <!-- <div class="skill_spacer"></div> -->
 
     <div class="spacer_small"></div>
-    <div class="title" id="title_talk">
-        <p onclick="click_experience('talks')">Talks</p>
-    </div>
+    <h2 class="exp-h2"><span class="exp-h2-accent">§</span> Talks</h2>
 
-    <div class="talks" id="talks" style="display: none;">
+    <div class="talks" id="talks">
         <!-- was: style="display: none;" -->
         <div class="year_block year22">
             <div style="height: 2rem"> </div>
