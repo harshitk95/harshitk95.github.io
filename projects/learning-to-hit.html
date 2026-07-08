@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning to Hit through Dynamical Systems — Harshit Khurana</title>
+  <meta name="description" content="Learning post-impact object motion with Gaussian Mixture Regression to place objects outside a robot's workspace via a stable hitting dynamical system.">
+  <link rel="stylesheet" href="../style.css?rnd=18">
+  <link rel="stylesheet" href="../style_publications.css?rnd=18">
+  <link rel="stylesheet" href="../style_projects.css?rnd=18">
+  <link rel="stylesheet" href="../style_experience.css?rnd=3">
+  <link rel="stylesheet" href="../style_projects_cards.css?rnd=2">
+  <link rel="stylesheet" href="style_project_detail.css?rnd=2">
+  <link rel="stylesheet" href="../style_book.css?rnd=2">
+  <script type="text/javascript" src="../main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+</head>
+
+<body>
+
+  <div class="logo" style="translate: 0 0.2rem">
+    <a href="../index.html"><img src="../images/logo_indark_internal.png" alt="logo" width="30px"></a>
+  </div>
+
+  <div class="navcontent">
+    <a href="../index.html"><span class="navlogo"><img src="../images/home_green.png" width="20px" height="20px"></span><span class="navnum">01.</span> <span class="navtitle">home</span></a>
+    <a href="../experience.html"><span class="navlogo"><img src="../images/experience_green.png" width="20px" height="20px"></span> <span class="navnum">02.</span> <span class="navtitle">experience</span></a>
+    <a href="../projects.html"><span class="navlogo"><img src="../images/publications_green.png" width="20px" height="20px"></span><span class="navnum">03.</span> <span class="navtitle">projects</span></a>
+    <a href="../publications.html"><span class="navlogo"><img src="../images/publications_green.png" width="20px" height="20px"></span><span class="navnum">04.</span> <span class="navtitle">publications</span></a>
+  </div>
+
+  <div class="topBack"></div>
+
+<div class="content">
+    <a href="../projects.html" class="pd-back">&larr; back to projects</a>
+
+    <header class="exp-hero">
+      <p class="exp-eyebrow">Learning &amp; Dynamical Systems</p>
+      <h1 class="exp-title">Learning to Hit through Dynamical Systems</h1>
+      <p class="exp-sub">The foundational work: learn how an object moves after being struck, then hit it so it slides to a target beyond the robot's reach.</p>
+      <div class="pd-chips">
+        <span class="pd-chip">Gaussian Mixture Regression</span>
+        <span class="pd-chip">Stable DS</span>
+        <span class="pd-chip">Inverse problem</span>
+        <span class="pd-chip">KUKA LBR iiwa 7</span>
+      </div>
+      <p style="margin-top:1.2rem;"><a class="pd-pdf" href="../standalone/learning-to-hit/index.html">&#8599; Dedicated project site</a></p>
+    </header>
+
+    <div class="pd-desc pd-prose">
+      <h3>Motivation</h3>
+      <p>
+        In logistics and industry, exploiting <span class="pd-term">impulsive actions</span> (pushing, hitting,
+        throwing) can speed up pick-and-place and let a robot place objects <span class="pd-term">well beyond its
+        natural workspace</span>. Unlike pushing, a hit is instantaneous: the action must be chosen correctly
+        <em>before</em> contact, because there is no chance to adjust once the object is released. Post-impact motion is
+        governed by friction, drag and restitution, all known only approximately.
+      </p>
+
+      <h3>The inverse problem</h3>
+      <p>
+        The forward problem &mdash; predicting where an object ends up given a hit &mdash; is easy if the dynamics are
+        known. This paper tackles the harder <span class="pd-term">inverse problem</span>: given an object's initial
+        and desired positions, what initial speed and direction should the robot deliver? It admits several solutions
+        and is complicated by physical uncertainty, so the mapping is <span class="pd-term">learned from data</span>
+        rather than modelled analytically.
+      </p>
+
+      <h3>Method</h3>
+      <ul>
+        <li><span class="pd-term">Hitting direction</span> follows directly from the object's initial and target positions on the sliding plane.</li>
+        <li><span class="pd-term">Hitting speed</span> is predicted by a probabilistic model of the relationship between hitting angle, end-effector speed and travelled distance, learned as a <span class="pd-term">Gaussian Mixture Model</span> (fit by Expectation-Maximisation, with the number of Gaussians chosen by the Bayesian Information Criterion) and queried via <span class="pd-term">Gaussian Mixture Regression</span>.</li>
+        <li><span class="pd-term">Motion generation</span> uses a provably stable dynamical system with a phantom/auxiliary attractor, so the end-effector reaches the object with the desired non-zero pre-impact velocity regardless of joint configuration &mdash; with a global asymptotic stability proof.</li>
+      </ul>
+
+      <h3>Results</h3>
+      <p>
+        A dataset of 60 real hits was collected on a <span class="pd-term">KUKA LBR iiwa 7</span>, spanning commanded
+        speeds in [0, 2.5]&nbsp;m/s and directions in [&minus;0.4, 0.4]&nbsp;rad. BIC selected a 3-Gaussian model; GMR
+        then predicts the hitting speed for new targets. Repeating each desired final position five times, the robot
+        reliably slides a box on a table of unknown friction to the requested location &mdash; demonstrating repeatable,
+        workspace-extending manipulation through learned hitting. This work is the foundation the later flux-based and
+        whole-body-hitting projects build upon.
+      </p>
+    </div>
+
+    <p><a class="pd-pdf" href="../resources/papers/Learning_to_Hit__A_statistical_Dynamical_System_based_approach.pdf" target="_blank">&#128196; Read the paper (PDF)</a></p>
+
+    <h2 class="exp-h2">Gallery</h2>
+    <div class="pd-gallery">
+      <div class="pd-media">
+        <img src="../resources/figures/Learning%20to%20Hit/EPFL_box_approach.png" alt="approach">
+        <p>Approach phase</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Learning%20to%20Hit/EPFL_box_hit.png" alt="hit">
+        <p>Impact phase</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Learning%20to%20Hit/EPFL_box_motion.png" alt="motion">
+        <p>Resulting object motion</p>
+      </div>
+    </div>
+
+    <h2 class="exp-h2">Related Publications</h2>
+    <div class="pd-pubs">
+      <a class="pd-pub" href="../publications.html#pub-learning-to-hit">
+        <p class="pd-pub-venue">IROS 2021</p>
+        <p class="pd-pub-title">Learning to Hit: A statistical Dynamical System based approach</p>
+        <p class="pd-pub-authors">H. Khurana, M. Bombile, A. Billard</p>
+      </a>
+      <a class="pd-pub" href="../publications.html#pub-phd-thesis">
+        <p class="pd-pub-venue">PhD Thesis · EPFL · 2024</p>
+        <p class="pd-pub-title">Leveraging intentional impacts in non-prehensile manipulation</p>
+        <p class="pd-pub-authors">Harshit Khurana</p>
+      </a>
+    </div>
+
+    <div class="desktop_spacer"></div>
+</div>
+</body>
+</html>

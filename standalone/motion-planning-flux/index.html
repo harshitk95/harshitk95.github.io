@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion Planning &amp; Inertia Based Control for Impact-Aware Manipulation — Harshit Khurana</title>
+  <meta name="description" content="Hitting flux: a control metric coupling robot configuration, speed and directional inertia for repeatable striking, validated on a KUKA LBR iiwa.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="home-link" href="https://harshitk95.github.io/">&larr; Harshit Khurana</a>
+    <a href="https://harshitk95.github.io/projects.html">all projects</a>
+  </div>
+
+  <div class="wrap">
+    <p class="eyebrow">Motion Planning &amp; Control</p>
+    <h1>Repeatable Motion Generation for a robot to hit an object</h1>
+    <p class="sub">Introducing <em>hitting flux</em> &mdash; a control metric that decouples an object's post-impact motion from the robot's pre-impact configuration.</p>
+    <div class="chips">
+      <span class="chip">Hitting flux</span>
+      <span class="chip">Dynamical systems</span>
+      <span class="chip">Inertia QP control</span>
+      <span class="chip">Stein distance</span>
+    </div>
+
+    <div class="card prose">
+      <h3>The problem</h3>
+      <p>Pick-and-place and quasi-static pushing confine a fixed manipulator to its own workspace and to objects within its payload limits. <span class="term">Hitting</span> &mdash; making contact at a non-zero relative speed &mdash; lets a robot place objects <span class="term">beyond its reach</span>, impart velocities exceeding its own hardware limits, and act faster than pushing. But the outcome of a hit depends jointly on the robot's configuration, its speed and the object's inertial properties, which previously meant re-learning a separate model for every object.</p>
+
+      <h3>Key contribution: hitting flux</h3>
+      <p>The paper proposes <span class="term">hitting flux</span> (&Phi;), a control metric derived from collision mechanics that depends on the robot's directional inertia, its speed and the object mass, and is directly proportional to the object's post-impact speed. By controlling this single quantity, the post-impact object behaviour is <span class="term">decoupled</span> from the specific pre-impact joint configuration &mdash; so the same desired flux produces the same object motion from many different robot postures.</p>
+
+      <h3>Method</h3>
+      <ul>
+        <li><span class="term">DS-based motion planner:</span> a dynamical system generates the pre-impact hitting motion in 3D task space, driving the end-effector through the contact point at the required direction and speed.</li>
+        <li><span class="term">Directional-inertia control:</span> a control structure regulates the robot's directional inertia so the desired flux is actually realised at impact.</li>
+        <li><span class="term">Inertia-matrix QP:</span> a quadratic program uses the gradient of the <em>Stein distance</em> on the SPD manifold to reach a desired inertia matrix at a desired position while respecting joint limits &mdash; exploiting the arm's redundancy.</li>
+      </ul>
+
+      <h3>Results</h3>
+      <p>Validated in simulation over ~192 trajectories and on a real <span class="term">KUKA LBR iiwa 7</span>, the approach produces repeatable post-impact object motion (RMSE in average object displacement) and generalises across boxes of <span class="term">different sizes and masses</span>, including open boxes with uneven mass distribution unsuitable for suction grippers. The inertia-QP controller reaches configurations far closer to the desired inertia than a plain inverse-kinematics controller.</p>
+    </div>
+
+    <a class="pdf-btn" href="assets/paper.pdf" target="_blank">&#128196; Read the paper (PDF)</a>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="media"><img src="assets/media/image_concept.png" alt="concept"><p>Concept — hitting flux</p></div>
+      <div class="media"><img src="assets/media/Flux_DS.png" alt="flux dynamical system"><p>Flux-based dynamical system</p></div>
+      <div class="media"><img src="assets/media/experimental_setup.jpg" alt="experimental setup"><p>KUKA LBR iiwa 7 setup</p></div>
+      <div class="media"><img src="assets/media/boxes_hitting.jpg" alt="boxes hitting"><p>Placing boxes by hitting</p></div>
+      <div class="media"><img src="assets/media/high_speed_intercept_final_final.png" alt="high speed intercept"><p>High-speed intercept</p></div>
+      <div class="media"><img src="assets/media/configuration_comparison.png" alt="configuration comparison"><p>IK vs. Inertia-QP configuration</p></div>
+    </div>
+
+    <h2>Related Publications</h2>
+    <div class="pubs">
+      <a class="pub" href="https://harshitk95.github.io/publications.html#pub-motion-planning">
+        <p class="pub-venue">IEEE Transactions on Robotics (TRO) · 2023</p>
+        <p class="pub-title">Motion Planning and Inertia based control for Impact Aware Manipulation</p>
+        <p class="pub-authors">H. Khurana, A. Billard</p>
+      </a>
+      <a class="pub" href="https://harshitk95.github.io/publications.html#pub-phd-thesis">
+        <p class="pub-venue">PhD Thesis · EPFL · 2024</p>
+        <p class="pub-title">Leveraging intentional impacts in non-prehensile manipulation</p>
+        <p class="pub-authors">Harshit Khurana</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Part of <a href="https://harshitk95.github.io/projects.html">Harshit Khurana's project portfolio</a> · EPFL LASA</p>
+  </footer>
+</body>
+</html>

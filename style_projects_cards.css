@@ -41,6 +41,16 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.content .project_cover .project_title a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.content .project_cover .project_title a:hover {
+    color: var(--halycon, #00eeb6);
+}
+
 /* ---------- inner layout ---------- */
 .content .project {
     margin: 0;
@@ -98,6 +108,22 @@
     color: var(--halycon, #00eeb6);
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* ---------- "view project" link ---------- */
+.content .project_more {
+    display: inline-block;
+    margin-top: 0.6rem;
+    color: var(--halycon, #00eeb6);
+    font-family: 'PT Mono', monospace;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.content .project_more:hover {
+    border-bottom-color: var(--halycon, #00eeb6);
 }
 
 /* ---------- desktop: media beside description ---------- */

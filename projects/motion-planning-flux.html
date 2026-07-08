@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Motion Planning &amp; Inertia Based Control for Impact-Aware Manipulation — Harshit Khurana</title>
+  <meta name="description" content="Hitting flux: a control metric coupling robot configuration, speed and directional inertia for repeatable striking, validated on a KUKA LBR iiwa.">
+  <link rel="stylesheet" href="../style.css?rnd=18">
+  <link rel="stylesheet" href="../style_publications.css?rnd=18">
+  <link rel="stylesheet" href="../style_projects.css?rnd=18">
+  <link rel="stylesheet" href="../style_experience.css?rnd=3">
+  <link rel="stylesheet" href="../style_projects_cards.css?rnd=2">
+  <link rel="stylesheet" href="style_project_detail.css?rnd=2">
+  <link rel="stylesheet" href="../style_book.css?rnd=2">
+  <script type="text/javascript" src="../main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+</head>
+
+<body>
+
+  <div class="logo" style="translate: 0 0.2rem">
+    <a href="../index.html"><img src="../images/logo_indark_internal.png" alt="logo" width="30px"></a>
+  </div>
+
+  <div class="navcontent">
+    <a href="../index.html"><span class="navlogo"><img src="../images/home_green.png" width="20px" height="20px"></span><span class="navnum">01.</span> <span class="navtitle">home</span></a>
+    <a href="../experience.html"><span class="navlogo"><img src="../images/experience_green.png" width="20px" height="20px"></span> <span class="navnum">02.</span> <span class="navtitle">experience</span></a>
+    <a href="../projects.html"><span class="navlogo"><img src="../images/publications_green.png" width="20px" height="20px"></span><span class="navnum">03.</span> <span class="navtitle">projects</span></a>
+    <a href="../publications.html"><span class="navlogo"><img src="../images/publications_green.png" width="20px" height="20px"></span><span class="navnum">04.</span> <span class="navtitle">publications</span></a>
+  </div>
+
+  <div class="topBack"></div>
+
+<div class="content">
+    <a href="../projects.html" class="pd-back">&larr; back to projects</a>
+
+    <header class="exp-hero">
+      <p class="exp-eyebrow">Motion Planning &amp; Control</p>
+      <h1 class="exp-title">Repeatable Motion Generation for a robot to hit an object</h1>
+      <p class="exp-sub">Introducing <em>hitting flux</em> &mdash; a control metric that decouples an object's post-impact motion from the robot's pre-impact configuration.</p>
+      <div class="pd-chips">
+        <span class="pd-chip">Hitting flux</span>
+        <span class="pd-chip">Dynamical systems</span>
+        <span class="pd-chip">Inertia QP control</span>
+        <span class="pd-chip">Stein distance</span>
+      </div>
+      <p style="margin-top:1.2rem;"><a class="pd-pdf" href="../standalone/motion-planning-flux/index.html">&#8599; Dedicated project site</a></p>
+    </header>
+
+    <div class="pd-desc pd-prose">
+      <h3>The problem</h3>
+      <p>
+        Pick-and-place and quasi-static pushing confine a fixed manipulator to its own workspace and to objects within
+        its payload limits. <span class="pd-term">Hitting</span> &mdash; making contact at a non-zero relative speed
+        &mdash; lets a robot place objects <span class="pd-term">beyond its reach</span>, impart velocities exceeding
+        its own hardware limits, and act faster than pushing. But the outcome of a hit depends jointly on the robot's
+        configuration, its speed and the object's inertial properties, which previously meant re-learning a separate
+        model for every object and constraining the arm to near-identical impact postures.
+      </p>
+
+      <h3>Key contribution: hitting flux</h3>
+      <p>
+        The paper proposes <span class="pd-term">hitting flux</span> (&Phi;), a control metric derived from collision
+        mechanics that depends on the robot's directional inertia, its speed and the object mass, and is directly
+        proportional to the object's post-impact speed. By controlling this single quantity, the post-impact object
+        behaviour is <span class="pd-term">decoupled</span> from the specific pre-impact joint configuration &mdash; so
+        the same desired flux produces the same object motion from many different robot postures.
+      </p>
+
+      <h3>Method</h3>
+      <ul>
+        <li><span class="pd-term">DS-based motion planner:</span> a dynamical system generates the pre-impact hitting motion in 3D task space, driving the end-effector through the contact point at the required direction and speed.</li>
+        <li><span class="pd-term">Directional-inertia control:</span> a control structure regulates the robot's directional inertia so the desired flux is actually realised at impact.</li>
+        <li><span class="pd-term">Inertia-matrix QP:</span> a quadratic program uses the gradient of the <em>Stein distance</em> on the SPD manifold to reach a desired inertia matrix at a desired position while respecting joint limits &mdash; exploiting the arm's redundancy.</li>
+      </ul>
+
+      <h3>Results</h3>
+      <p>
+        Validated in simulation over ~192 trajectories and on a real <span class="pd-term">KUKA LBR iiwa 7</span>, the
+        approach produces repeatable post-impact object motion (reported as RMSE in average object displacement) and
+        generalises across boxes of <span class="pd-term">different sizes and masses</span>, including open boxes with
+        uneven mass distribution unsuitable for suction grippers. The inertia-QP controller reaches configurations far
+        closer to the desired inertia than a plain inverse-kinematics controller. The authors note that motion planning
+        and inertia shaping can be adversarial, motivating future planners that jointly satisfy both.
+      </p>
+    </div>
+
+    <p><a class="pd-pdf" href="../resources/papers/Motion_Planning_and_Inertia_Based_Control_for_Impact_Aware_Manipulation.pdf" target="_blank">&#128196; Read the paper (PDF)</a></p>
+
+    <h2 class="exp-h2">Gallery</h2>
+    <div class="pd-gallery">
+      <div class="pd-media">
+        <img src="../resources/figures/Motion%20Planning%20and%20Inertia%20Based%20Control/image_concept.png" alt="concept">
+        <p>Concept — hitting flux</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Motion%20Planning%20and%20Inertia%20Based%20Control/Flux_DS.png" alt="flux dynamical system">
+        <p>Flux-based dynamical system</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Motion%20Planning%20and%20Inertia%20Based%20Control/experimental_setup.jpg" alt="experimental setup">
+        <p>KUKA LBR iiwa 7 experimental setup</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Motion%20Planning%20and%20Inertia%20Based%20Control/boxes_hitting.jpg" alt="boxes hitting">
+        <p>Placing boxes by hitting</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Motion%20Planning%20and%20Inertia%20Based%20Control/high_speed_intercept_final_final.png" alt="high speed intercept">
+        <p>High-speed intercept</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Motion%20Planning%20and%20Inertia%20Based%20Control/configuration_comparison.png" alt="configuration comparison">
+        <p>IK vs. Inertia-QP configuration</p>
+      </div>
+    </div>
+
+    <h2 class="exp-h2">Related Publications</h2>
+    <div class="pd-pubs">
+      <a class="pd-pub" href="../publications.html#pub-motion-planning">
+        <p class="pd-pub-venue">IEEE Transactions on Robotics (TRO) · 2023</p>
+        <p class="pd-pub-title">Motion Planning and Inertia based control for Impact Aware Manipulation</p>
+        <p class="pd-pub-authors">H. Khurana, A. Billard</p>
+      </a>
+      <a class="pd-pub" href="../publications.html#pub-phd-thesis">
+        <p class="pd-pub-venue">PhD Thesis · EPFL · 2024</p>
+        <p class="pd-pub-title">Leveraging intentional impacts in non-prehensile manipulation</p>
+        <p class="pd-pub-authors">Harshit Khurana</p>
+      </a>
+    </div>
+
+    <div class="desktop_spacer"></div>
+</div>
+</body>
+</html>

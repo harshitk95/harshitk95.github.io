@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automated Air Hockey Inspired Dual Arm Hitting — Harshit Khurana</title>
+  <meta name="description" content="A dual-arm air-hockey data-collection framework and learnt stochastic object-motion model for planning sequential, Golf-like hits.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <a class="home-link" href="https://harshitk95.github.io/">&larr; Harshit Khurana</a>
+    <a href="https://harshitk95.github.io/projects.html">all projects</a>
+  </div>
+
+  <div class="wrap">
+    <p class="eyebrow">Learning Object Dynamics</p>
+    <h1>Automated Air Hockey Inspired Dual Arm Hitting Framework</h1>
+    <p class="sub">An automated, air-hockey-style dual-arm rig that collects impact data and learns a stochastic model to plan sequential, Golf-like hits.</p>
+    <div class="chips">
+      <span class="chip">Dual-arm setup</span>
+      <span class="chip">Impact-aware EKF</span>
+      <span class="chip">Density modeling</span>
+      <span class="chip">Sequential hitting</span>
+    </div>
+
+    <div class="card prose">
+      <div class="note"><p>Summary written from the paper abstract &mdash; the full PDF (RA-L 2025) isn't available yet. Add it as <code>assets/paper.pdf</code> and I'll expand this page with a download link.</p></div>
+
+      <h3>The idea</h3>
+      <p>Learning how an object moves after a hit needs a lot of consistent impact data &mdash; tedious and hard to gather by hand. This project automates it with a <span class="term">dual-arm setup that hits an object back and forth</span>, like a collaborative game of air hockey, continuously generating labelled impact examples.</p>
+
+      <h3>Method</h3>
+      <ul>
+        <li><span class="term">Automated data collection:</span> two arms rally an object between them; a finite-state machine coordinates the exchange so hits are repeatable and self-resetting.</li>
+        <li><span class="term">Impact-aware Extended Kalman Filter:</span> approximates the discontinuous impulse dynamics through a hitting-force model that balances the energies during collision, keeping the automation robust to impacts.</li>
+        <li><span class="term">Full density modeling:</span> friction stochasticity and control error make the outcome uncertain, so the relationship between hitting impulse and the object's resulting displacement is modelled as a full probability distribution rather than a point estimate.</li>
+      </ul>
+
+      <h3>Application — the "Golf" principle</h3>
+      <p>The learned motion model is used to plan <span class="term">sequential hits with two or more robots</span>: much like sinking a long putt in several strokes, a chain of planned hits can drive an object to a location <span class="term">far beyond the reach of any single robot</span>.</p>
+    </div>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="media"><img src="assets/media/experimental_setup.png" alt="experimental setup"><p>Dual-arm experimental setup</p></div>
+      <div class="media"><img src="assets/media/Airhockey%20FSM.png" alt="state machine"><p>Automation finite state machine</p></div>
+      <div class="media"><img src="assets/media/Reachable%20spaces.png" alt="reachable spaces"><p>Reachable spaces of the arms</p></div>
+      <div class="media"><img src="assets/media/Golf_1.png" alt="golf sequence"><p>Sequential hitting — step 1</p></div>
+      <div class="media"><img src="assets/media/Golf_3.png" alt="golf sequence"><p>Sequential hitting — step 3</p></div>
+      <div class="media"><img src="assets/media/total_optimisation_graph.png" alt="optimisation"><p>Sequential-hit optimisation</p></div>
+    </div>
+
+    <h2>Related Publications</h2>
+    <div class="pubs">
+      <a class="pub" href="https://harshitk95.github.io/publications.html#pub-inverse-hitting">
+        <p class="pub-venue">RA-L 2025</p>
+        <p class="pub-title">Learning Inverse Hitting Problem</p>
+        <p class="pub-authors">H. Khurana, J. Hermus, M. Gautier, A. Billard</p>
+      </a>
+      <a class="pub" href="https://harshitk95.github.io/publications.html#pub-phd-thesis">
+        <p class="pub-venue">PhD Thesis · EPFL · 2024</p>
+        <p class="pub-title">Leveraging intentional impacts in non-prehensile manipulation</p>
+        <p class="pub-authors">Harshit Khurana</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>Part of <a href="https://harshitk95.github.io/projects.html">Harshit Khurana's project portfolio</a> · EPFL LASA</p>
+  </footer>
+</body>
+</html>

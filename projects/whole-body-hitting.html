@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hitting with different joints of a manipulator — Harshit Khurana</title>
+  <meta name="description" content="Impact-aware non-prehensile manipulation by hitting with links other than the end-effector to exploit higher effective inertia.">
+  <link rel="stylesheet" href="../style.css?rnd=18">
+  <link rel="stylesheet" href="../style_publications.css?rnd=18">
+  <link rel="stylesheet" href="../style_projects.css?rnd=18">
+  <link rel="stylesheet" href="../style_experience.css?rnd=3">
+  <link rel="stylesheet" href="../style_projects_cards.css?rnd=2">
+  <link rel="stylesheet" href="style_project_detail.css?rnd=2">
+  <link rel="stylesheet" href="../style_book.css?rnd=2">
+  <script type="text/javascript" src="../main.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+</head>
+
+<body>
+
+  <div class="logo" style="translate: 0 0.2rem">
+    <a href="../index.html"><img src="../images/logo_indark_internal.png" alt="logo" width="30px"></a>
+  </div>
+
+  <div class="navcontent">
+    <a href="../index.html"><span class="navlogo"><img src="../images/home_green.png" width="20px" height="20px"></span><span class="navnum">01.</span> <span class="navtitle">home</span></a>
+    <a href="../experience.html"><span class="navlogo"><img src="../images/experience_green.png" width="20px" height="20px"></span> <span class="navnum">02.</span> <span class="navtitle">experience</span></a>
+    <a href="../projects.html"><span class="navlogo"><img src="../images/publications_green.png" width="20px" height="20px"></span><span class="navnum">03.</span> <span class="navtitle">projects</span></a>
+    <a href="../publications.html"><span class="navlogo"><img src="../images/publications_green.png" width="20px" height="20px"></span><span class="navnum">04.</span> <span class="navtitle">publications</span></a>
+  </div>
+
+  <div class="topBack"></div>
+
+<div class="content">
+    <a href="../projects.html" class="pd-back">&larr; back to projects</a>
+
+    <header class="exp-hero">
+      <p class="exp-eyebrow">Impact-Aware Manipulation</p>
+      <h1 class="exp-title">Hitting with different joints of a manipulator</h1>
+      <p class="exp-sub">Extending non-prehensile hitting beyond the end-effector, using any link of the arm to exploit its higher effective inertia.</p>
+      <div class="pd-chips">
+        <span class="pd-chip">KUKA LBR iiwa</span>
+        <span class="pd-chip">Whole-body hitting</span>
+        <span class="pd-chip">Directional inertia</span>
+        <span class="pd-chip">QP optimisation</span>
+      </div>
+      <p style="margin-top:1.2rem;"><a class="pd-pdf" href="../standalone/whole-body-hitting/index.html">&#8599; Dedicated project site</a></p>
+    </header>
+
+    <div class="pd-desc pd-prose">
+      <h3>The idea</h3>
+      <p>
+        Humans don't only push objects with their fingertips &mdash; we use elbows, forearms and the backs of our
+        hands. This paper extends the robot skill of <span class="pd-term">manipulation through hitting</span> in the
+        same spirit: instead of always striking with the end-effector, the robot is allowed to make contact with the
+        environment using <span class="pd-term">other links along its kinematic chain</span>. Because a robot's
+        effective inertia is higher at joints closer to its base, hitting with those links lets it move
+        <span class="pd-term">heavier objects</span> than an end-effector strike could.
+      </p>
+
+      <h3>Why inertia matters</h3>
+      <p>
+        The work builds on the notion of <span class="pd-term">hitting flux</span> &mdash; a scaled post-impact object
+        speed derived from collision mechanics that couples the robot's directional effective inertia
+        (&lambda;<sub>h</sub>), its contact speed and the object mass. Since a link's effective inertia depends on the
+        configuration of the joints <em>before</em> it in the chain, the joints ahead of a chosen hitting link can be
+        rearranged to raise the inertia at the contact point &mdash; without changing that link's Cartesian velocity.
+      </p>
+
+      <h3>Method</h3>
+      <ul>
+        <li><span class="pd-term">Hitting-joint selection:</span> a maximum-flux analysis (formulated as a linear program under joint-velocity limits) predicts which joint can deliver the strongest hit for a given object and location.</li>
+        <li><span class="pd-term">Impact-posture generation:</span> inverse kinematics places the chosen link at the object, while a null-space objective orients the remaining joints to maximise directional inertia in the hitting direction.</li>
+        <li><span class="pd-term">Desired-inertia tracking:</span> a per-control-loop quadratic program (solved with OSQP in PyBullet) computes the next feasible joint velocities under flux and joint limits, feeding a smooth reference inertia into the arm's inertia-regulating controller.</li>
+      </ul>
+
+      <h3>Results</h3>
+      <p>
+        On a simulated 7-DoF KUKA LBR iiwa, focusing on joints 5, 6 and 7, the framework shows that a well-chosen link
+        produces markedly stronger hits: the directional inertia when striking with <span class="pd-term">joint 6
+        (3.9&nbsp;kg) is roughly 56% higher</span> than with joint 7 (2.5&nbsp;kg), letting the robot impart more
+        momentum to the same object. The method also smoothly steers the arm toward feasible desired-inertia values
+        along the hitting motion.
+      </p>
+      <p style="margin-bottom:0.4rem;">This is preliminary work; ongoing extensions learn a distribution over feasible hitting configurations to warm-start the optimisation.</p>
+    </div>
+
+    <p><a class="pd-pdf" href="../resources/papers/Hitting_with_Different_Joints_of_a_Robotic_Manipulator___Submitted.pdf" target="_blank">&#128196; Read the paper (PDF)</a></p>
+
+    <h2 class="exp-h2">Gallery</h2>
+    <div class="pd-gallery">
+      <div class="pd-media">
+        <img src="../resources/figures/Whole%20Body%20Hitting/proof_concept_1.png" alt="proof of concept">
+        <p>Proof of concept — approach</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Whole%20Body%20Hitting/proof_concept_2.png" alt="proof of concept">
+        <p>Proof of concept — impact</p>
+      </div>
+      <div class="pd-media">
+        <img src="../resources/figures/Whole%20Body%20Hitting/kuka_joints.png" alt="kuka joints">
+        <p>Candidate hitting joints (5, 6, 7) on the KUKA arm</p>
+      </div>
+      <div class="pd-media">
+        <video controls preload="metadata" poster="../resources/figures/Whole%20Body%20Hitting/proof_concept_1.png">
+          <source src="../resources/figures/Whole%20Body%20Hitting/hit%20with%20ee.m4v" type="video/mp4">
+        </video>
+        <p>Hitting with the end-effector</p>
+      </div>
+      <div class="pd-media">
+        <video controls preload="metadata" poster="../resources/figures/Whole%20Body%20Hitting/proof_concept_2.png">
+          <source src="../resources/figures/Whole%20Body%20Hitting/hit%20with%20joint%206.m4v" type="video/mp4">
+        </video>
+        <p>Hitting with joint 6 — higher effective inertia</p>
+      </div>
+      <div class="pd-media">
+        <video controls preload="metadata" poster="../resources/figures/Whole%20Body%20Hitting/kuka_joints.png">
+          <source src="../resources/figures/Whole%20Body%20Hitting/Different_joint_hitting_WS.m4v" type="video/mp4">
+        </video>
+        <p>Reachable workspace across hitting joints</p>
+      </div>
+    </div>
+
+    <h2 class="exp-h2">Related Publications</h2>
+    <div class="pd-pubs">
+      <a class="pd-pub" href="../publications.html#pub-efficient-hitting">
+        <p class="pd-pub-venue">IROS 2025</p>
+        <p class="pd-pub-title">Efficient Hitting with Different Links of a Redundant Robotic Manipulator</p>
+        <p class="pd-pub-authors">H. Khurana, A. Billard</p>
+      </a>
+      <a class="pd-pub" href="../publications.html#pub-phd-thesis">
+        <p class="pd-pub-venue">PhD Thesis · EPFL · 2024</p>
+        <p class="pd-pub-title">Leveraging intentional impacts in non-prehensile manipulation</p>
+        <p class="pd-pub-authors">Harshit Khurana</p>
+      </a>
+    </div>
+
+    <div class="desktop_spacer"></div>
+</div>
+</body>
+</html>
