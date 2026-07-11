@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Motion Planning &amp; Inertia Based Control for Impact-Aware Manipulation — Harshit Khurana</title>
+  <title>Motion Planning &amp; Inertia Based Control for Impact-Aware Manipulation - Harshit Khurana</title>
   <meta name="description" content="Hitting flux: a control metric coupling robot configuration, speed and directional inertia for repeatable striking, validated on a KUKA LBR iiwa.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?rnd=2">
 </head>
 <body>
   <div class="topbar">
@@ -16,7 +16,7 @@
   <div class="wrap">
     <p class="eyebrow">Motion Planning &amp; Control</p>
     <h1>Repeatable Motion Generation for a robot to hit an object</h1>
-    <p class="sub">Introducing <em>hitting flux</em> &mdash; a control metric that decouples an object's post-impact motion from the robot's pre-impact configuration.</p>
+    <p class="sub">Introducing <em>hitting flux</em> - a control metric that decouples an object's post-impact motion from the robot's pre-impact configuration.</p>
     <div class="chips">
       <span class="chip">Hitting flux</span>
       <span class="chip">Dynamical systems</span>
@@ -26,16 +26,16 @@
 
     <div class="card prose">
       <h3>The problem</h3>
-      <p>Pick-and-place and quasi-static pushing confine a fixed manipulator to its own workspace and to objects within its payload limits. <span class="term">Hitting</span> &mdash; making contact at a non-zero relative speed &mdash; lets a robot place objects <span class="term">beyond its reach</span>, impart velocities exceeding its own hardware limits, and act faster than pushing. But the outcome of a hit depends jointly on the robot's configuration, its speed and the object's inertial properties, which previously meant re-learning a separate model for every object.</p>
+      <p>Pick-and-place and quasi-static pushing confine a fixed manipulator to its own workspace and to objects within its payload limits. <span class="term">Hitting</span> - making contact at a non-zero relative speed - lets a robot place objects <span class="term">beyond its reach</span>, impart velocities exceeding its own hardware limits, and act faster than pushing. But the outcome of a hit depends jointly on the robot's configuration, its speed and the object's inertial properties, which previously meant re-learning a separate model for every object.</p>
 
       <h3>Key contribution: hitting flux</h3>
-      <p>The paper proposes <span class="term">hitting flux</span> (&Phi;), a control metric derived from collision mechanics that depends on the robot's directional inertia, its speed and the object mass, and is directly proportional to the object's post-impact speed. By controlling this single quantity, the post-impact object behaviour is <span class="term">decoupled</span> from the specific pre-impact joint configuration &mdash; so the same desired flux produces the same object motion from many different robot postures.</p>
+      <p>The paper proposes <span class="term">hitting flux</span> (&Phi;), a control metric derived from collision mechanics that depends on the robot's directional inertia, its speed and the object mass, and is directly proportional to the object's post-impact speed. By controlling this single quantity, the post-impact object behaviour is <span class="term">decoupled</span> from the specific pre-impact joint configuration - so the same desired flux produces the same object motion from many different robot postures.</p>
 
       <h3>Method</h3>
       <ul>
         <li><span class="term">DS-based motion planner:</span> a dynamical system generates the pre-impact hitting motion in 3D task space, driving the end-effector through the contact point at the required direction and speed.</li>
         <li><span class="term">Directional-inertia control:</span> a control structure regulates the robot's directional inertia so the desired flux is actually realised at impact.</li>
-        <li><span class="term">Inertia-matrix QP:</span> a quadratic program uses the gradient of the <em>Stein distance</em> on the SPD manifold to reach a desired inertia matrix at a desired position while respecting joint limits &mdash; exploiting the arm's redundancy.</li>
+        <li><span class="term">Inertia-matrix QP:</span> a quadratic program uses the gradient of the <em>Stein distance</em> on the SPD manifold to reach a desired inertia matrix at a desired position while respecting joint limits - exploiting the arm's redundancy.</li>
       </ul>
 
       <h3>Results</h3>
@@ -46,7 +46,7 @@
 
     <h2>Gallery</h2>
     <div class="gallery">
-      <div class="media"><img src="assets/media/image_concept.png" alt="concept"><p>Concept — hitting flux</p></div>
+      <div class="media"><img src="assets/media/image_concept.png" alt="concept"><p>Concept - hitting flux</p></div>
       <div class="media"><img src="assets/media/Flux_DS.png" alt="flux dynamical system"><p>Flux-based dynamical system</p></div>
       <div class="media"><img src="assets/media/experimental_setup.jpg" alt="experimental setup"><p>KUKA LBR iiwa 7 setup</p></div>
       <div class="media"><img src="assets/media/boxes_hitting.jpg" alt="boxes hitting"><p>Placing boxes by hitting</p></div>

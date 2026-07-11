@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hitting with different joints of a manipulator — Harshit Khurana</title>
+  <title>Hitting with different joints of a manipulator - Harshit Khurana</title>
   <meta name="description" content="Impact-aware non-prehensile manipulation by hitting with links other than the end-effector to exploit higher effective inertia.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?rnd=2">
 </head>
 <body>
   <div class="topbar">
@@ -26,10 +26,10 @@
 
     <div class="card prose">
       <h3>The idea</h3>
-      <p>Humans don't only push objects with their fingertips &mdash; we use elbows, forearms and the backs of our hands. This paper extends the robot skill of <span class="term">manipulation through hitting</span> in the same spirit: instead of always striking with the end-effector, the robot makes contact using <span class="term">other links along its kinematic chain</span>. Because a robot's effective inertia is higher at joints closer to its base, hitting with those links lets it move <span class="term">heavier objects</span> than an end-effector strike could.</p>
+      <p>Humans don't only push objects with their fingertips - we use elbows, forearms and the backs of our hands. This paper extends the robot skill of <span class="term">manipulation through hitting</span> in the same spirit: instead of always striking with the end-effector, the robot makes contact using <span class="term">other links along its kinematic chain</span>. Because a robot's effective inertia is higher at joints closer to its base, hitting with those links lets it move <span class="term">heavier objects</span> than an end-effector strike could.</p>
 
       <h3>Why inertia matters</h3>
-      <p>The work builds on <span class="term">hitting flux</span> &mdash; a scaled post-impact object speed derived from collision mechanics that couples the robot's directional effective inertia (&lambda;<sub>h</sub>), its contact speed and the object mass. Since a link's effective inertia depends on the configuration of the joints <em>before</em> it in the chain, the joints ahead of a chosen hitting link can be rearranged to raise the inertia at the contact point &mdash; without changing that link's Cartesian velocity.</p>
+      <p>The work builds on <span class="term">hitting flux</span> - a scaled post-impact object speed derived from collision mechanics that couples the robot's directional effective inertia (&lambda;<sub>h</sub>), its contact speed and the object mass. Since a link's effective inertia depends on the configuration of the joints <em>before</em> it in the chain, the joints ahead of a chosen hitting link can be rearranged to raise the inertia at the contact point - without changing that link's Cartesian velocity.</p>
 
       <h3>Method</h3>
       <ul>
@@ -46,11 +46,11 @@
 
     <h2>Gallery</h2>
     <div class="gallery">
-      <div class="media"><img src="assets/media/proof_concept_1.png" alt="proof of concept"><p>Proof of concept — approach</p></div>
-      <div class="media"><img src="assets/media/proof_concept_2.png" alt="proof of concept"><p>Proof of concept — impact</p></div>
+      <div class="media"><img src="assets/media/proof_concept_1.png" alt="proof of concept"><p>Proof of concept - approach</p></div>
+      <div class="media"><img src="assets/media/proof_concept_2.png" alt="proof of concept"><p>Proof of concept - impact</p></div>
       <div class="media"><img src="assets/media/kuka_joints.png" alt="kuka joints"><p>Candidate hitting joints (5, 6, 7)</p></div>
       <div class="media"><video controls preload="metadata" poster="assets/media/proof_concept_1.png"><source src="assets/media/hit%20with%20ee.m4v" type="video/mp4"></video><p>Hitting with the end-effector</p></div>
-      <div class="media"><video controls preload="metadata" poster="assets/media/proof_concept_2.png"><source src="assets/media/hit%20with%20joint%206.m4v" type="video/mp4"></video><p>Hitting with joint 6 — higher inertia</p></div>
+      <div class="media"><video controls preload="metadata" poster="assets/media/proof_concept_2.png"><source src="assets/media/hit%20with%20joint%206.m4v" type="video/mp4"></video><p>Hitting with joint 6 - higher inertia</p></div>
       <div class="media"><video controls preload="metadata" poster="assets/media/kuka_joints.png"><source src="assets/media/Different_joint_hitting_WS.m4v" type="video/mp4"></video><p>Reachable workspace across joints</p></div>
     </div>
 

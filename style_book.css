@@ -1,5 +1,5 @@
 /* ============================================================
-   Old-book typography — applied site-wide (loaded LAST)
+   Old-book typography - applied site-wide (loaded LAST)
    Body:     EB Garamond   (classic book serif)
    Headings: Libre Baskerville (display book serif)
    Small monospace date/eyebrow labels are left untouched.
@@ -35,7 +35,7 @@ p, li,
     line-height: 1.7;
 }
 
-/* EB Garamond runs small — scale body copy up for readability */
+/* EB Garamond runs small - scale body copy up for readability */
 body {
     font-size: 1.12rem;
 }

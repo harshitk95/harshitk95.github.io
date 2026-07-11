@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Learning to Hit through Dynamical Systems — Harshit Khurana</title>
+  <title>Learning to Hit through Dynamical Systems - Harshit Khurana</title>
   <meta name="description" content="Learning post-impact object motion with Gaussian Mixture Regression to place objects outside a robot's workspace via a stable hitting dynamical system.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?rnd=2">
 </head>
 <body>
   <div class="topbar">
@@ -29,17 +29,17 @@
       <p>In logistics and industry, exploiting <span class="term">impulsive actions</span> (pushing, hitting, throwing) can speed up pick-and-place and let a robot place objects <span class="term">well beyond its natural workspace</span>. Unlike pushing, a hit is instantaneous: the action must be chosen correctly <em>before</em> contact, since there is no chance to adjust once the object is released. Post-impact motion is governed by friction, drag and restitution, all known only approximately.</p>
 
       <h3>The inverse problem</h3>
-      <p>The forward problem &mdash; predicting where an object ends up given a hit &mdash; is easy if the dynamics are known. This paper tackles the harder <span class="term">inverse problem</span>: given an object's initial and desired positions, what initial speed and direction should the robot deliver? It admits several solutions and is complicated by physical uncertainty, so the mapping is <span class="term">learned from data</span> rather than modelled analytically.</p>
+      <p>The forward problem - predicting where an object ends up given a hit - is easy if the dynamics are known. This paper tackles the harder <span class="term">inverse problem</span>: given an object's initial and desired positions, what initial speed and direction should the robot deliver? It admits several solutions and is complicated by physical uncertainty, so the mapping is <span class="term">learned from data</span> rather than modelled analytically.</p>
 
       <h3>Method</h3>
       <ul>
         <li><span class="term">Hitting direction</span> follows directly from the object's initial and target positions on the sliding plane.</li>
         <li><span class="term">Hitting speed</span> is predicted by a probabilistic model relating hitting angle, end-effector speed and travelled distance, learned as a <span class="term">Gaussian Mixture Model</span> (fit by Expectation-Maximisation, with the number of Gaussians chosen by the Bayesian Information Criterion) and queried via <span class="term">Gaussian Mixture Regression</span>.</li>
-        <li><span class="term">Motion generation</span> uses a provably stable dynamical system with a phantom attractor, so the end-effector reaches the object with the desired non-zero pre-impact velocity regardless of joint configuration &mdash; with a global asymptotic stability proof.</li>
+        <li><span class="term">Motion generation</span> uses a provably stable dynamical system with a phantom attractor, so the end-effector reaches the object with the desired non-zero pre-impact velocity regardless of joint configuration - with a global asymptotic stability proof.</li>
       </ul>
 
       <h3>Results</h3>
-      <p>A dataset of 60 real hits was collected on a <span class="term">KUKA LBR iiwa 7</span>, spanning commanded speeds in [0, 2.5]&nbsp;m/s and directions in [&minus;0.4, 0.4]&nbsp;rad. BIC selected a 3-Gaussian model; GMR then predicts the hitting speed for new targets. Repeating each desired final position five times, the robot reliably slides a box on a table of unknown friction to the requested location &mdash; demonstrating repeatable, workspace-extending manipulation through learned hitting.</p>
+      <p>A dataset of 60 real hits was collected on a <span class="term">KUKA LBR iiwa 7</span>, spanning commanded speeds in [0, 2.5]&nbsp;m/s and directions in [&minus;0.4, 0.4]&nbsp;rad. BIC selected a 3-Gaussian model; GMR then predicts the hitting speed for new targets. Repeating each desired final position five times, the robot reliably slides a box on a table of unknown friction to the requested location - demonstrating repeatable, workspace-extending manipulation through learned hitting.</p>
     </div>
 
     <a class="pdf-btn" href="assets/paper.pdf" target="_blank">&#128196; Read the paper (PDF)</a>

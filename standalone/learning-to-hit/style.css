@@ -1,5 +1,5 @@
 /* ============================================================
-   Standalone project site — self-contained, portable.
+   Standalone project site - self-contained, portable.
    Dark theme, green academic accent, old-book serif fonts.
    Matches harshitk95.github.io design language.
    ============================================================ */
@@ -90,7 +90,7 @@ h2 {
 
 h3 { font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.2rem; color: #fff; margin: 1.8rem 0 0.7rem; }
 
-.prose p, .prose li { font-size: 1.1rem; line-height: 1.75; color: var(--text); font-weight: 400; }
+.prose p, .prose li { font-size: 1.2rem; line-height: 1.75; color: var(--text); font-weight: 400; }
 .prose p { margin: 0 0 1rem; }
 .prose ul { padding-left: 1.2rem; margin: 0 0 1rem; }
 .prose li { margin-bottom: 0.5rem; }
