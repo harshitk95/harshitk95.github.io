@@ -341,7 +341,8 @@
     overflow: hidden;
 }
 
-.p-video-frame iframe {
+.p-video-frame iframe,
+.p-video-frame video {
     position: absolute;
     inset: 0;
     width: 100%;

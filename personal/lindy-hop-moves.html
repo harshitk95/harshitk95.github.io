@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Harshit Khurana — Lindy Hop Moves</title>
+    <meta name="description" content="A summary of core Lindy Hop moves — from the swing-out and Charleston to send-outs, tuck turns and air steps.">
+    <link rel="stylesheet" href="style_personal.css?rnd=16">
+    <link rel="stylesheet" href="style_personal_modern.css?rnd=1">
+    <link rel="stylesheet" href="../style_book.css?rnd=2">
+    <script type="text/javascript" src="../main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <style>
+        .bp-back {
+            display: inline-block;
+            font-family: 'PT Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--p-accent, #f09d51);
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        .bp-back:hover { opacity: 1; }
+        .bp-meta {
+            font-family: 'PT Mono', monospace;
+            font-size: 0.8rem;
+            letter-spacing: 0.08rem;
+            color: rgba(255,255,255,0.5);
+            margin-top: 0.6rem;
+        }
+        .bp-prose p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.82);
+            margin: 0 0 1.3rem 0;
+            max-width: 46rem;
+        }
+        .bp-prose strong { color: #fff; font-weight: 600; }
+        .bp-prose .accent { color: var(--p-accent, #f09d51); }
+        .bp-moves { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.2rem; }
+        .bp-move {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.10);
+            border-radius: 14px;
+            padding: 1.3rem 1.4rem;
+        }
+        .bp-move h3 {
+            margin: 0 0 0.55rem 0;
+            font-size: 1.25rem;
+            color: #fff;
+        }
+        .bp-move .bp-tag {
+            display: inline-block;
+            font-family: 'PT Mono', monospace;
+            font-size: 0.7rem;
+            letter-spacing: 0.06rem;
+            text-transform: uppercase;
+            color: var(--p-accent, #f09d51);
+            border: 1px solid rgba(240,157,81,0.35);
+            border-radius: 999px;
+            padding: 0.12rem 0.6rem;
+            margin-bottom: 0.7rem;
+        }
+        .bp-move .bp-tag.swing { color: #6fb3ff; border-color: rgba(111,179,255,0.4); }
+        .bp-move p {
+            margin: 0;
+            font-size: 1.02rem;
+            line-height: 1.65;
+            color: rgba(255,255,255,0.78);
+        }
+        .bp-move video {
+            width: 100%;
+            border-radius: 10px;
+            margin: 0.2rem 0 0.9rem 0;
+            display: block;
+            background: #000;
+        }
+        .bp-move.bp-move-wide { grid-column: 1 / -1; }
+        .bp-move.bp-move-wide .bp-move-inner {
+            display: grid;
+            grid-template-columns: minmax(260px, 1.4fr) 1fr;
+            gap: 1.4rem;
+            align-items: center;
+        }
+        .bp-vids {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.9rem;
+        }
+        .bp-vids figure { margin: 0; }
+        .bp-vids figcaption {
+            font-family: 'PT Mono', monospace;
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.5);
+            margin-top: 0.35rem;
+            text-align: center;
+        }
+        @media (max-width: 620px) {
+            .bp-move.bp-move-wide .bp-move-inner { grid-template-columns: 1fr; }
+            .bp-vids { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo" style="translate: 0 0.2rem">
+        <a href="personal.html"><img src="../images/logo_perso_internal.png" alt="logo" width="25px"></a>
+        <p style="letter-spacing: 0.15rem">life</p>
+    </div>
+
+    <div class="navcontent">
+        <a href="personal.html"><span class="navlogo"><img src="../images/home.png" width="25px" height="25px"></span> <span class="navnum">01.</span> <span class="navtitle">home</span></a>
+        <a href="hobbies.html"><span class="navlogo"><img src="../images/hobbies.png" width="25px" height="25px"></span> <span class="navnum">02.</span> <span class="navtitle">hobbies</span></a>
+        <a href="blog.html"><span class="navlogo"><img src="../images/recent.png" width="25px" height="25px"></span> <span class="navnum">03.</span> <span class="navtitle">blog</span></a>
+        <a href="ideas.html" onclick="blink()"><span class="navlogo"><img src="../images/project.png" width="25px" height="25px"></span> <span class="navnum">04.</span> <span class="navtitle">ideas</span></a>
+    </div>
+
+    <div class="topBack"></div>
+
+<main class="p-wrap">
+
+        <a class="bp-back" href="dance.html">&larr; back to dance</a>
+
+        <header class="p-hero">
+            <p class="p-eyebrow">Swing &amp; connection</p>
+            <div class="p-name"><h1>Lindy Hop Moves</h1></div>
+            <p class="p-role">A working summary of <span class="accent">Lindy Hop</span> - the original swing dance, built around the swing-out.</p>
+            <p class="bp-meta">Dance &middot; reference</p>
+        </header>
+
+        <section class="p-section bp-prose">
+            <p>
+                Lindy Hop is the original swing dance out of 1930s Harlem, built on an eight-count pulse and a stretchy,
+                elastic connection between partners.
+            </p>
+        </section>
+
+        <section class="p-section bp-prose">
+            <h2 class="p-h2"><span class="p-h2-accent">01</span> Core figures</h2>
+            <div class="bp-moves">
+                <div class="bp-move bp-move-wide">
+                    <div class="bp-move-inner">
+                        <div class="bp-vids">
+                            <figure>
+                                <video src="media/lindy-basic-step.mp4" autoplay loop muted playsinline controls></video>
+                                <figcaption>Step animation</figcaption>
+                            </figure>
+                            <figure>
+                                <video src="media/lindy-basic-humanoid.mp4" autoplay loop muted playsinline controls></video>
+                                <figcaption>Humanoid sim (MuJoCo)</figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <span class="bp-tag">basic</span>
+                            <h3>Lindy Basic (in place)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">core</span>
+                    <h3>Swing-Out</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">core</span>
+                    <h3>Lindy Circle</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">core</span>
+                    <h3>Send-Out / Return</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">core</span>
+                    <h3>Tuck Turn</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">core</span>
+                    <h3>Swing-Out with Inside Turn</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">core</span>
+                    <h3>Texas Tommy</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-section bp-prose">
+            <h2 class="p-h2"><span class="p-h2-accent">02</span> Charleston &amp; variations</h2>
+            <div class="bp-moves">
+                <div class="bp-move">
+                    <span class="bp-tag swing">charleston</span>
+                    <h3>Partnered Charleston</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">charleston</span>
+                    <h3>Tandem Charleston</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">charleston</span>
+                    <h3>Hand-to-Hand Charleston</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">variation</span>
+                    <h3>Swivels &amp; Kicks</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">variation</span>
+                    <h3>Jig Walks / Fishtails</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">air step</span>
+                    <h3>Aerials</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-section bp-prose">
+            <h2 class="p-h2"><span class="p-h2-accent">03</span> More figures &amp; play</h2>
+            <div class="bp-moves">
+                <div class="bp-move">
+                    <span class="bp-tag">figure</span>
+                    <h3>Circle / Lindy Turn</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">figure</span>
+                    <h3>Swing-Out from Closed</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">figure</span>
+                    <h3>Outside Turn</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">figure</span>
+                    <h3>Sugar Push / Throw</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">figure</span>
+                    <h3>Hacksaw</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag">figure</span>
+                    <h3>Shuffles</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">flavour</span>
+                    <h3>Boogie Back &amp; Forward</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">flavour</span>
+                    <h3>Kick-Ball-Change</h3>
+                </div>
+                <div class="bp-move">
+                    <span class="bp-tag swing">air step</span>
+                    <h3>Lindy Flip / Hip Toss</h3>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footId" class="p-footer">
+            <div class="foot-social" id="emailid">
+                <a href="https://www.linkedin.com/in/harshitkhurana95/" target="_blank"><img src="../images/linkedIn_perso.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/harshitkh95/" target="_blank"><img src="../images/instagram_perso.png" alt="instagram"></a>
+                <a href="https://github.com/harshitk95" target="_blank"><img src="../images/github_perso.png" alt="github"></a>
+            </div>
+            <p class="foot-copy">&copy; Harshit Khurana</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
